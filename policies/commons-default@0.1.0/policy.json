@@ -1,0 +1,21 @@
+{
+  "defaults_posture": {
+    "adult": "DENY",
+    "commercial_noise": "OPT_IN",
+    "content_farms": "DENY",
+    "exploit": "DENY",
+    "malware": "DENY"
+  },
+  "egress": {
+    "allow_domains": [],
+    "default": "DENY"
+  },
+  "name": "commons-default",
+  "notes": "Draft starter policy. Enforcement occurs via membrane decisions.",
+  "policy_version": "0.1.0",
+  "topic_overrides": {
+    "/computers": "ALLOW",
+    "/reference": "ALLOW",
+    "/science": "ALLOW"
+  }
+}

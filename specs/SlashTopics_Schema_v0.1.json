@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "name": {
+      "description": "e.g., core",
+      "type": "string"
+    },
+    "namespace": {
+      "description": "e.g., protocols/slash-topics",
+      "type": "string"
+    },
+    "operators": {
+      "items": {
+        "properties": {
+          "egress_required": {
+            "default": false,
+            "type": "boolean"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "slug": {
+            "description": "e.g., /dr=YYYY-YYYY",
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "operator",
+              "integration"
+            ],
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug",
+          "type"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "pack_version": {
+      "type": "string"
+    },
+    "topics": {
+      "items": {
+        "properties": {
+          "defaults_posture": {
+            "enum": [
+              "default_on",
+              "opt_in",
+              "blocked"
+            ],
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "topic",
+              "category",
+              "vertical"
+            ],
+            "type": "string"
+          },
+          "slug": {
+            "description": "e.g., /science",
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "tags": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "slug",
+          "kind",
+          "title"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "version": {
+      "description": "semver",
+      "type": "string"
+    }
+  },
+  "required": [
+    "pack_version",
+    "namespace",
+    "name",
+    "version",
+    "topics",
+    "operators"
+  ],
+  "title": "SlashTopicsPack",
+  "type": "object"
+}
