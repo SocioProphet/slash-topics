@@ -1,44 +1,12 @@
 {
-  "description": "Core slash topics pack (bootstrap). Replace topics with recovered blekko inventory when imported.",
-  "name": "core",
-  "namespace": "protocols/slash-topics",
-  "operators": [
-    {
-      "egress_required": false,
-      "notes": "Date range filter",
-      "slug": "/dr=YYYY-YYYY",
-      "type": "operator"
-    }
-  ],
-  "pack_version": "1",
-  "topics": [
-    {
-      "defaults_posture": "default_on",
-      "kind": "topic",
-      "slug": "/science",
-      "tags": [
-        "high-signal"
-      ],
-      "title": "Science"
-    },
-    {
-      "defaults_posture": "default_on",
-      "kind": "topic",
-      "slug": "/computers",
-      "tags": [
-        "high-signal"
-      ],
-      "title": "Computers"
-    },
-    {
-      "defaults_posture": "default_on",
-      "kind": "topic",
-      "slug": "/reference",
-      "tags": [
-        "high-signal"
-      ],
-      "title": "Reference"
-    }
-  ],
-  "version": "0.1.0"
+  "schema": "slash-topics.pack.v0",
+  "name": "slash-topics/core",
+  "version": "0.1.0",
+  "description": "Core slash topic taxonomy seeded from blekko (2012), normalized and governed for commons use.",
+  "license": "MIT",
+  "maintainer": "SocioProphet",
+  "status": "seed",
+  "inputs": [
+    "data/blekko/blekko_slashtags_2012-10-15.json"
+  ]
 }

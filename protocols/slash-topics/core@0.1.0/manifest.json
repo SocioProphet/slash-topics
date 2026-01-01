@@ -1,8 +1,16 @@
 {
-  "artifact": "protocol-pack",
-  "name": "core",
-  "namespace": "protocols/slash-topics",
-  "pack_ref": "hash://sha256/fb6037194cfb223f2dc23fe1c18f41c90a6ed27df175a8c9181c6ea51a844ae1",
-  "schema_ref": "hash://sha256/99b41b4597f3b9d38140c086d767bc07bffee4f2d4a436a08ea2053690be1352",
-  "version": "0.1.0"
+  "schema": "slash-topics.manifest.v0",
+  "pack": "slash-topics/core@0.1.0",
+  "artifacts": {
+    "topics.json": {
+      "count": 3
+    },
+    "pack.json": {}
+  },
+  "canonicalization": {
+    "format": "json",
+    "ordering": "lexicographic",
+    "encoding": "utf-8",
+    "hash": "blake3"
+  }
 }
