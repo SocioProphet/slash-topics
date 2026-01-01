@@ -1,0 +1,25 @@
+{
+  "artifact": "blekko_slashtags_seed",
+  "version": "2012-10-15",
+  "files": [
+    {
+      "path": "data/blekko/blekko_slashtags_2012-10-15.csv",
+      "bytes": 14115,
+      "blake3": "hash://blake3/6ab38f957e4741d548e96576da32c3a4f1986de884aeae6c8f0f0568bdac3328"
+    },
+    {
+      "path": "data/blekko/blekko_slashtags_2012-10-15.json",
+      "bytes": 10972,
+      "blake3": "hash://blake3/019dc4855202fafa214db7d11d58498ed248f8e2b851c4a47ed292bfcfb34bc4"
+    },
+    {
+      "path": "data/blekko/blekko_slashtags_2012-10-15.md",
+      "bytes": 7312,
+      "blake3": "hash://blake3/8471dd4dc6a26db54acc54b2877000ba5344f5bc69a18f4cc91c46534049a6de"
+    }
+  ],
+  "counts": {
+    "csv_rows_excluding_header": 509
+  },
+  "notes": "Recovered blekko slash-topic directory seed; bootstrap taxonomy. Content-addressed with BLAKE3."
+}
