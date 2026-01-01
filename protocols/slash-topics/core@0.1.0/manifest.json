@@ -3,9 +3,12 @@
   "pack": "slash-topics/core@0.1.0",
   "artifacts": {
     "topics.json": {
-      "count": 3
+      "count": 482,
+      "blake3": "hash://blake3/e22c678d6754caef0cee4a0b78cb2cceabe52858b4003dcee2212b787092667a"
     },
-    "pack.json": {}
+    "pack.json": {
+      "blake3": "hash://blake3/49fec32e677cda82db60869a51e57d8c32db8a1e9b0877d245f3b9564b360f68"
+    }
   },
   "canonicalization": {
     "format": "json",

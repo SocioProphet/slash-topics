@@ -1,559 +1,5304 @@
-{
-  "schema": "slash-topics.topics.v0",
-  "source": "blekko_2012-10-15",
-  "count": 3,
-  "topics": {
-    "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
-    "categories": {
-      "arts": [
-        "/actors",
-        "/anime",
-        "/architecture",
-        "/aviation-museums",
-        "/ballet",
-        "/beatles",
-        "/bluegrass",
-        "/broadway",
-        "/comics",
-        "/dance",
-        "/disney",
-        "/film-festivals",
-        "/gossip",
-        "/grateful-dead",
-        "/guitars",
-        "/lyrics",
-        "/manga",
-        "/maritime-museums",
-        "/movies",
-        "/music",
-        "/music-festivals",
-        "/musical-instruments",
-        "/naruto",
-        "/opera",
-        "/orchestra-instruments",
-        "/photo-equipment",
-        "/photo-sharing",
-        "/photo-software",
-        "/photoblogs",
-        "/photography",
-        "/pianos",
-        "/pokemon",
-        "/railroad-museums",
-        "/spinal-tap",
-        "/stock-photo",
-        "/tabs",
-        "/tickets",
-        "/toy-museums",
-        "/webcomics",
-        "/world-instruments",
-        "/yarn-bombing"
-      ],
-      "autos": [
-        "/auto-museums",
-        "/car-audio",
-        "/car-parts",
-        "/car-repair",
-        "/car-security",
-        "/car-tires",
-        "/cars",
-        "/classic-cars",
-        "/dmv",
-        "/gas-prices",
-        "/motorcycle-gear",
-        "/motorcycles",
-        "/traffic"
-      ],
-      "business": [
-        "/accounting",
-        "/advertising",
-        "/career",
-        "/conferencing",
-        "/entrepreneurship",
-        "/foreclosure",
-        "/jobs",
-        "/marketing",
-        "/money-transfer",
-        "/mortgage",
-        "/productivity",
-        "/promotional-products",
-        "/public-relations",
-        "/sem",
-        "/seoblogs",
-        "/seosites",
-        "/smallbusiness"
-      ],
-      "computers": [
-        "/api",
-        "/apple",
-        "/artificial-intelligence",
-        "/blogging",
-        "/bsd",
-        "/cloud",
-        "/computer-security",
-        "/css",
-        "/device-drivers",
-        "/email",
-        "/file-transfer",
-        "/hosting",
-        "/lisp",
-        "/microsoft",
-        "/mysql",
-        "/password-management",
-        "/php",
-        "/postgresql",
-        "/programming",
-        "/security-software",
-        "/sql",
-        "/sqlserver",
-        "/web-browsers",
-        "/web-development",
-        "/windows",
-        "/wordpress"
-      ],
-      "culture": [
-        "/african-american",
-        "/american-indian",
-        "/baby",
-        "/baby-shower",
-        "/buddhism",
-        "/buddhist-products",
-        "/catholic",
-        "/charity",
-        "/christian-products",
-        "/christianity",
-        "/christmas",
-        "/conspiracies",
-        "/diapers",
-        "/divorce",
-        "/e-cards",
-        "/entertaining",
-        "/etiquette",
-        "/feminism",
-        "/genealogy",
-        "/green",
-        "/halloween",
-        "/hinduism",
-        "/holidays",
-        "/invitations",
-        "/islam",
-        "/jewish",
-        "/jewish-museums",
-        "/judaica",
-        "/judaism",
-        "/latino",
-        "/lgbt",
-        "/mormon",
-        "/online-dating",
-        "/organic",
-        "/parenting",
-        "/prom",
-        "/relationship-advice",
-        "/religion",
-        "/thanksgiving",
-        "/valentines-day",
-        "/wedding"
-      ],
-      "education": [
-        "/colleges",
-        "/edu-games",
-        "/esl",
-        "/financial-aid",
-        "/grants",
-        "/homeschool",
-        "/homework-help",
-        "/montessori",
-        "/scholarships",
-        "/special-education",
-        "/teaching",
-        "/term-papers",
-        "/test-prep",
-        "/textbooks",
-        "/voc-ed",
-        "/waldorf"
-      ],
-      "fashion": [
-        "/antique-jewelry",
-        "/athletic-apparel",
-        "/beauty",
-        "/big-and-tall",
-        "/bridal-gowns",
-        "/childrens-apparel",
-        "/cosmetics",
-        "/costumes",
-        "/fashion",
-        "/formal-dresses",
-        "/hair",
-        "/hairstyles",
-        "/handbags",
-        "/jeans",
-        "/jerseys",
-        "/jewelry",
-        "/juniors-clothing",
-        "/lingerie",
-        "/maternity",
-        "/mens-fashion",
-        "/mens-formal",
-        "/perfumes",
-        "/plus-size",
-        "/shoes",
-        "/sunglasses",
-        "/swimwear",
-        "/t-shirts",
-        "/ties",
-        "/uniforms",
-        "/watches",
-        "/western-wear"
-      ],
-      "finance": [
-        "/credit",
-        "/economics",
-        "/insurance",
-        "/irs",
-        "/money",
-        "/retirement",
-        "/taxes"
-      ],
-      "food": [
-        "/bbq",
-        "/beer",
-        "/candy",
-        "/cheese",
-        "/chocolate",
-        "/cocktails",
-        "/coffee",
-        "/cooking-tools",
-        "/food",
-        "/food-shopping",
-        "/halal",
-        "/liqueur",
-        "/recipes",
-        "/tea",
-        "/whisky",
-        "/wine"
-      ],
-      "government": [
-        "/2012-election",
-        "/campaign-finance",
-        "/congress",
-        "/domestic-violence",
-        "/elections",
-        "/federal-agencies",
-        "/fraud",
-        "/identity-theft",
-        "/ows",
-        "/peace-corps",
-        "/politics",
-        "/sopa",
-        "/state-symbols",
-        "/united-nations",
-        "/urban-planning"
-      ],
-      "health": [
-        "/acupuncture",
-        "/allergies",
-        "/alternative-medicine",
-        "/alzheimers",
-        "/aromatherapy",
-        "/asthma",
-        "/ayurveda",
-        "/cancer",
-        "/cardiology",
-        "/celiac",
-        "/dermatology",
-        "/diabetes",
-        "/diet",
-        "/fitness",
-        "/food-safety",
-        "/health",
-        "/hepatitis",
-        "/herbal-medicine",
-        "/hiv-aids",
-        "/homeopathy",
-        "/macrobiotics",
-        "/medical-id",
-        "/medications",
-        "/multiple-sclerosis",
-        "/nutrition",
-        "/parkinsons",
-        "/pediatrics",
-        "/plasticsurgery",
-        "/pregnancy",
-        "/psych",
-        "/sleep",
-        "/substance-abuse",
-        "/vaccines",
-        "/yoga",
-        "/yoga-equipment"
-      ],
-      "home": [
-        "/cabinets",
-        "/coffee-equipment",
-        "/diy",
-        "/furniture",
-        "/gardening",
-        "/home-inspection",
-        "/home-storage",
-        "/interior-design",
-        "/lawn-care",
-        "/outdoor-furniture",
-        "/paint-supplies",
-        "/real-estate",
-        "/real-estate-appraisal",
-        "/rugs",
-        "/tile",
-        "/title-insurance",
-        "/tools",
-        "/vacuums",
-        "/water-filters",
-        "/windows-and-doors"
-      ],
-      "humanities": [
-        "/american-history",
-        "/american-revolution",
-        "/ancient-history",
-        "/anthropology",
-        "/archaeology",
-        "/black-history",
-        "/california-history",
-        "/ebooks",
-        "/egypt-history",
-        "/exploration",
-        "/grammar",
-        "/history",
-        "/literary-criticism",
-        "/mythology",
-        "/poetry",
-        "/presidents",
-        "/shakespeare",
-        "/sociology",
-        "/tolkien",
-        "/womens-history",
-        "/world-history",
-        "/writing"
-      ],
-      "media": [
-        "/award-shows",
-        "/cartoons",
-        "/classic-tv",
-        "/cooking-shows",
-        "/jewish-news",
-        "/news",
-        "/old-time-radio",
-        "/public-radio",
-        "/radio",
-        "/reality-tv",
-        "/sesame-street",
-        "/soap-operas",
-        "/social-news",
-        "/tv",
-        "/zines"
-      ],
-      "recreation": [
-        "/africa-travel",
-        "/airlines",
-        "/airports",
-        "/archery",
-        "/asia-travel",
-        "/astrology",
-        "/aviation",
-        "/canada-travel",
-        "/candlemaking",
-        "/car-rental",
-        "/chess",
-        "/coloring-pages",
-        "/cruises",
-        "/digital-scrapbooking",
-        "/europe-travel",
-        "/fabric",
-        "/family-crafts",
-        "/games",
-        "/geocaching",
-        "/hotels",
-        "/knitting",
-        "/luggage",
-        "/national-parks",
-        "/paintball",
-        "/quilting",
-        "/role playing games",
-        "/rubber-stamps",
-        "/safari",
-        "/sailing",
-        "/scrapbooking",
-        "/sewing",
-        "/skateboarding",
-        "/soapmaking",
-        "/softball",
-        "/travel"
-      ],
-      "reference": [
-        "/academic-libraries",
-        "/calendar",
-        "/chemistry-journals",
-        "/define",
-        "/digital-collections",
-        "/econ-journals",
-        "/history-journals",
-        "/jewish-libraries",
-        "/journals",
-        "/librarianship",
-        "/library-technology",
-        "/lis-journals",
-        "/literature-journals",
-        "/map-libraries",
-        "/math-journals",
-        "/medical-libraries",
-        "/people-search",
-        "/philosophy-journals",
-        "/public-libraries",
-        "/quotations",
-        "/sociology-journals",
-        "/theological-libraries"
-      ],
-      "science": [
-        "/aerospace",
-        "/anatomy",
-        "/astronomy",
-        "/botanical-gardens",
-        "/botany",
-        "/cartography",
-        "/cell-biology",
-        "/chemistry",
-        "/climate",
-        "/ecology",
-        "/electricity",
-        "/endangered-species",
-        "/environment",
-        "/evolution",
-        "/geography",
-        "/geology",
-        "/marine-biology",
-        "/math",
-        "/molecularbiology",
-        "/nanotechnology",
-        "/paleontology",
-        "/physics",
-        "/pollution",
-        "/robotics",
-        "/science",
-        "/science-fair",
-        "/science-museums",
-        "/solar-energy",
-        "/weather",
-        "/wind-energy"
-      ],
-      "shopping": [
-        "/action-figures",
-        "/antiques",
-        "/barbie",
-        "/cameras",
-        "/collectible-dolls",
-        "/consumer-protection",
-        "/coupons",
-        "/deals",
-        "/dolls",
-        "/electronic-pets",
-        "/fair-trade",
-        "/flowers",
-        "/gadgets",
-        "/gift-baskets",
-        "/gift-cards",
-        "/gifts",
-        "/gps",
-        "/lego",
-        "/lemon-law",
-        "/made-in-america",
-        "/mobile-phones",
-        "/office-furniture",
-        "/office-supplies",
-        "/party-supplies",
-        "/phone-accessories",
-        "/phone-cards",
-        "/posters",
-        "/reviews",
-        "/ringtones",
-        "/telescopes",
-        "/toys"
-      ],
-      "sports": [
-        "/aikido",
-        "/baseball",
-        "/basketball",
-        "/boxing",
-        "/college-basketball",
-        "/college-football",
-        "/college-sports",
-        "/cricket",
-        "/fantasy-baseball",
-        "/fantasy-football",
-        "/figure-skating",
-        "/football",
-        "/martial-arts",
-        "/mlb",
-        "/mma",
-        "/nba",
-        "/nfl",
-        "/nhl",
-        "/olympics",
-        "/racing",
-        "/rugby",
-        "/running",
-        "/skiing",
-        "/soccer",
-        "/super-bowl",
-        "/swimming",
-        "/tai-chi",
-        "/tennis",
-        "/wnba",
-        "/womens-basketball",
-        "/wrestling"
-      ]
-    },
-    "builtins": [
-      "/add",
-      "/american-history",
-      "/apple",
-      "/appliances",
-      "/architecture",
-      "/arts",
-      "/astronomy",
-      "/beauty",
-      "/broadway",
-      "/cocktails",
-      "/colleges",
-      "/date",
-      "/define",
-      "/diy",
-      "/editme",
-      "/games",
-      "/gardening",
-      "/handbags",
-      "/health",
-      "/holidays",
-      "/hotels",
-      "/images",
-      "/likes",
-      "/login",
-      "/logout",
-      "/map",
-      "/me",
-      "/money",
-      "/music",
-      "/parenting",
-      "/perfumes",
-      "/profile",
-      "/programming",
-      "/recipes",
-      "/religion",
-      "/shop",
-      "/smallbusiness",
-      "/sports",
-      "/stock",
-      "/travel",
-      "/user",
-      "/videos",
-      "/view",
-      "/weather",
-      "/wine"
-    ]
+[
+  {
+    "name": "2012-election",
+    "slash": "/2012-election",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "academic-libraries",
+    "slash": "/academic-libraries",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "accounting",
+    "slash": "/accounting",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "action-figures",
+    "slash": "/action-figures",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "actors",
+    "slash": "/actors",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "acupuncture",
+    "slash": "/acupuncture",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "add",
+    "slash": "/add",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "advertising",
+    "slash": "/advertising",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "aerospace",
+    "slash": "/aerospace",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "africa-travel",
+    "slash": "/africa-travel",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "african-american",
+    "slash": "/african-american",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "aikido",
+    "slash": "/aikido",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "airlines",
+    "slash": "/airlines",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "airports",
+    "slash": "/airports",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "allergies",
+    "slash": "/allergies",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "alternative-medicine",
+    "slash": "/alternative-medicine",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "alzheimers",
+    "slash": "/alzheimers",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "american-history",
+    "slash": "/american-history",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "american-indian",
+    "slash": "/american-indian",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "american-revolution",
+    "slash": "/american-revolution",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "anatomy",
+    "slash": "/anatomy",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "ancient-history",
+    "slash": "/ancient-history",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "anime",
+    "slash": "/anime",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "anthropology",
+    "slash": "/anthropology",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "antique-jewelry",
+    "slash": "/antique-jewelry",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "antiques",
+    "slash": "/antiques",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "api",
+    "slash": "/api",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "apple",
+    "slash": "/apple",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "appliances",
+    "slash": "/appliances",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "archaeology",
+    "slash": "/archaeology",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "archery",
+    "slash": "/archery",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "architecture",
+    "slash": "/architecture",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "aromatherapy",
+    "slash": "/aromatherapy",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "artificial-intelligence",
+    "slash": "/artificial-intelligence",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "arts",
+    "slash": "/arts",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "asia-travel",
+    "slash": "/asia-travel",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "asthma",
+    "slash": "/asthma",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "astrology",
+    "slash": "/astrology",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "astronomy",
+    "slash": "/astronomy",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "athletic-apparel",
+    "slash": "/athletic-apparel",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "auto-museums",
+    "slash": "/auto-museums",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "aviation",
+    "slash": "/aviation",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "aviation-museums",
+    "slash": "/aviation-museums",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "award-shows",
+    "slash": "/award-shows",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "ayurveda",
+    "slash": "/ayurveda",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "baby",
+    "slash": "/baby",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "baby-shower",
+    "slash": "/baby-shower",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "ballet",
+    "slash": "/ballet",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "barbie",
+    "slash": "/barbie",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "baseball",
+    "slash": "/baseball",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "basketball",
+    "slash": "/basketball",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "bbq",
+    "slash": "/bbq",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "beatles",
+    "slash": "/beatles",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "beauty",
+    "slash": "/beauty",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "beer",
+    "slash": "/beer",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "big-and-tall",
+    "slash": "/big-and-tall",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "black-history",
+    "slash": "/black-history",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "blogging",
+    "slash": "/blogging",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "bluegrass",
+    "slash": "/bluegrass",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "botanical-gardens",
+    "slash": "/botanical-gardens",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "botany",
+    "slash": "/botany",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "boxing",
+    "slash": "/boxing",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "bridal-gowns",
+    "slash": "/bridal-gowns",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "broadway",
+    "slash": "/broadway",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "bsd",
+    "slash": "/bsd",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "buddhism",
+    "slash": "/buddhism",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "buddhist-products",
+    "slash": "/buddhist-products",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cabinets",
+    "slash": "/cabinets",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "calendar",
+    "slash": "/calendar",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "california-history",
+    "slash": "/california-history",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cameras",
+    "slash": "/cameras",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "campaign-finance",
+    "slash": "/campaign-finance",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "canada-travel",
+    "slash": "/canada-travel",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cancer",
+    "slash": "/cancer",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "candlemaking",
+    "slash": "/candlemaking",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "candy",
+    "slash": "/candy",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "car-audio",
+    "slash": "/car-audio",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "car-parts",
+    "slash": "/car-parts",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "car-rental",
+    "slash": "/car-rental",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "car-repair",
+    "slash": "/car-repair",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "car-security",
+    "slash": "/car-security",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "car-tires",
+    "slash": "/car-tires",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cardiology",
+    "slash": "/cardiology",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "career",
+    "slash": "/career",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cars",
+    "slash": "/cars",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cartography",
+    "slash": "/cartography",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cartoons",
+    "slash": "/cartoons",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "catholic",
+    "slash": "/catholic",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "celiac",
+    "slash": "/celiac",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cell-biology",
+    "slash": "/cell-biology",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "charity",
+    "slash": "/charity",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cheese",
+    "slash": "/cheese",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "chemistry",
+    "slash": "/chemistry",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "chemistry-journals",
+    "slash": "/chemistry-journals",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "chess",
+    "slash": "/chess",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "childrens-apparel",
+    "slash": "/childrens-apparel",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "chocolate",
+    "slash": "/chocolate",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "christian-products",
+    "slash": "/christian-products",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "christianity",
+    "slash": "/christianity",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "christmas",
+    "slash": "/christmas",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "classic-cars",
+    "slash": "/classic-cars",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "classic-tv",
+    "slash": "/classic-tv",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "climate",
+    "slash": "/climate",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cloud",
+    "slash": "/cloud",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cocktails",
+    "slash": "/cocktails",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "coffee",
+    "slash": "/coffee",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "coffee-equipment",
+    "slash": "/coffee-equipment",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "collectible-dolls",
+    "slash": "/collectible-dolls",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "college-basketball",
+    "slash": "/college-basketball",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "college-football",
+    "slash": "/college-football",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "college-sports",
+    "slash": "/college-sports",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "colleges",
+    "slash": "/colleges",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "coloring-pages",
+    "slash": "/coloring-pages",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "comics",
+    "slash": "/comics",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "computer-security",
+    "slash": "/computer-security",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "conferencing",
+    "slash": "/conferencing",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "congress",
+    "slash": "/congress",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "conspiracies",
+    "slash": "/conspiracies",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "consumer-protection",
+    "slash": "/consumer-protection",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cooking-shows",
+    "slash": "/cooking-shows",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cooking-tools",
+    "slash": "/cooking-tools",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cosmetics",
+    "slash": "/cosmetics",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "costumes",
+    "slash": "/costumes",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "coupons",
+    "slash": "/coupons",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "credit",
+    "slash": "/credit",
+    "category": "finance",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cricket",
+    "slash": "/cricket",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "cruises",
+    "slash": "/cruises",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "css",
+    "slash": "/css",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "dance",
+    "slash": "/dance",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "date",
+    "slash": "/date",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "deals",
+    "slash": "/deals",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "define",
+    "slash": "/define",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "dermatology",
+    "slash": "/dermatology",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "device-drivers",
+    "slash": "/device-drivers",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "diabetes",
+    "slash": "/diabetes",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "diapers",
+    "slash": "/diapers",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "diet",
+    "slash": "/diet",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "digital-collections",
+    "slash": "/digital-collections",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "digital-scrapbooking",
+    "slash": "/digital-scrapbooking",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "disney",
+    "slash": "/disney",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "divorce",
+    "slash": "/divorce",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "diy",
+    "slash": "/diy",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "dmv",
+    "slash": "/dmv",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "dolls",
+    "slash": "/dolls",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "domestic-violence",
+    "slash": "/domestic-violence",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "e-cards",
+    "slash": "/e-cards",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "ebooks",
+    "slash": "/ebooks",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "ecology",
+    "slash": "/ecology",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "econ-journals",
+    "slash": "/econ-journals",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "economics",
+    "slash": "/economics",
+    "category": "finance",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "editme",
+    "slash": "/editme",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "edu-games",
+    "slash": "/edu-games",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "egypt-history",
+    "slash": "/egypt-history",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "elections",
+    "slash": "/elections",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "electricity",
+    "slash": "/electricity",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "electronic-pets",
+    "slash": "/electronic-pets",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "email",
+    "slash": "/email",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "endangered-species",
+    "slash": "/endangered-species",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "entertaining",
+    "slash": "/entertaining",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "entrepreneurship",
+    "slash": "/entrepreneurship",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "environment",
+    "slash": "/environment",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "esl",
+    "slash": "/esl",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "etiquette",
+    "slash": "/etiquette",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "europe-travel",
+    "slash": "/europe-travel",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "evolution",
+    "slash": "/evolution",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "exploration",
+    "slash": "/exploration",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "fabric",
+    "slash": "/fabric",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "fair-trade",
+    "slash": "/fair-trade",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "family-crafts",
+    "slash": "/family-crafts",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "fantasy-baseball",
+    "slash": "/fantasy-baseball",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "fantasy-football",
+    "slash": "/fantasy-football",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "fashion",
+    "slash": "/fashion",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "federal-agencies",
+    "slash": "/federal-agencies",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "feminism",
+    "slash": "/feminism",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "figure-skating",
+    "slash": "/figure-skating",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "file-transfer",
+    "slash": "/file-transfer",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "film-festivals",
+    "slash": "/film-festivals",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "financial-aid",
+    "slash": "/financial-aid",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "fitness",
+    "slash": "/fitness",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "flowers",
+    "slash": "/flowers",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "food",
+    "slash": "/food",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "food-safety",
+    "slash": "/food-safety",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "food-shopping",
+    "slash": "/food-shopping",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "football",
+    "slash": "/football",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "foreclosure",
+    "slash": "/foreclosure",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "formal-dresses",
+    "slash": "/formal-dresses",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "fraud",
+    "slash": "/fraud",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "furniture",
+    "slash": "/furniture",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "gadgets",
+    "slash": "/gadgets",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "games",
+    "slash": "/games",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "gardening",
+    "slash": "/gardening",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "gas-prices",
+    "slash": "/gas-prices",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "genealogy",
+    "slash": "/genealogy",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "geocaching",
+    "slash": "/geocaching",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "geography",
+    "slash": "/geography",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "geology",
+    "slash": "/geology",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "gift-baskets",
+    "slash": "/gift-baskets",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "gift-cards",
+    "slash": "/gift-cards",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "gifts",
+    "slash": "/gifts",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "gossip",
+    "slash": "/gossip",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "gps",
+    "slash": "/gps",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "grammar",
+    "slash": "/grammar",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "grants",
+    "slash": "/grants",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "grateful-dead",
+    "slash": "/grateful-dead",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "green",
+    "slash": "/green",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "guitars",
+    "slash": "/guitars",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "hair",
+    "slash": "/hair",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "hairstyles",
+    "slash": "/hairstyles",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "halal",
+    "slash": "/halal",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "halloween",
+    "slash": "/halloween",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "handbags",
+    "slash": "/handbags",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "health",
+    "slash": "/health",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "hepatitis",
+    "slash": "/hepatitis",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "herbal-medicine",
+    "slash": "/herbal-medicine",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "hinduism",
+    "slash": "/hinduism",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "history",
+    "slash": "/history",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "history-journals",
+    "slash": "/history-journals",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "hiv-aids",
+    "slash": "/hiv-aids",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "holidays",
+    "slash": "/holidays",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "home-inspection",
+    "slash": "/home-inspection",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "home-storage",
+    "slash": "/home-storage",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "homeopathy",
+    "slash": "/homeopathy",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "homeschool",
+    "slash": "/homeschool",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "homework-help",
+    "slash": "/homework-help",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "hosting",
+    "slash": "/hosting",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "hotels",
+    "slash": "/hotels",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "identity-theft",
+    "slash": "/identity-theft",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "images",
+    "slash": "/images",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "insurance",
+    "slash": "/insurance",
+    "category": "finance",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "interior-design",
+    "slash": "/interior-design",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "invitations",
+    "slash": "/invitations",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "irs",
+    "slash": "/irs",
+    "category": "finance",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "islam",
+    "slash": "/islam",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "jeans",
+    "slash": "/jeans",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "jerseys",
+    "slash": "/jerseys",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "jewelry",
+    "slash": "/jewelry",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "jewish",
+    "slash": "/jewish",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "jewish-libraries",
+    "slash": "/jewish-libraries",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "jewish-museums",
+    "slash": "/jewish-museums",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "jewish-news",
+    "slash": "/jewish-news",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "jobs",
+    "slash": "/jobs",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "journals",
+    "slash": "/journals",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "judaica",
+    "slash": "/judaica",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "judaism",
+    "slash": "/judaism",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "juniors-clothing",
+    "slash": "/juniors-clothing",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "knitting",
+    "slash": "/knitting",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "latino",
+    "slash": "/latino",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "lawn-care",
+    "slash": "/lawn-care",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "lego",
+    "slash": "/lego",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "lemon-law",
+    "slash": "/lemon-law",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "lgbt",
+    "slash": "/lgbt",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "librarianship",
+    "slash": "/librarianship",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "library-technology",
+    "slash": "/library-technology",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "likes",
+    "slash": "/likes",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "lingerie",
+    "slash": "/lingerie",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "liqueur",
+    "slash": "/liqueur",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "lis-journals",
+    "slash": "/lis-journals",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "lisp",
+    "slash": "/lisp",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "literary-criticism",
+    "slash": "/literary-criticism",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "literature-journals",
+    "slash": "/literature-journals",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "login",
+    "slash": "/login",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "logout",
+    "slash": "/logout",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "luggage",
+    "slash": "/luggage",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "lyrics",
+    "slash": "/lyrics",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "macrobiotics",
+    "slash": "/macrobiotics",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "made-in-america",
+    "slash": "/made-in-america",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "manga",
+    "slash": "/manga",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "map",
+    "slash": "/map",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "map-libraries",
+    "slash": "/map-libraries",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "marine-biology",
+    "slash": "/marine-biology",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "maritime-museums",
+    "slash": "/maritime-museums",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "marketing",
+    "slash": "/marketing",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "martial-arts",
+    "slash": "/martial-arts",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "maternity",
+    "slash": "/maternity",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "math",
+    "slash": "/math",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "math-journals",
+    "slash": "/math-journals",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "me",
+    "slash": "/me",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "medical-id",
+    "slash": "/medical-id",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "medical-libraries",
+    "slash": "/medical-libraries",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "medications",
+    "slash": "/medications",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "mens-fashion",
+    "slash": "/mens-fashion",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "mens-formal",
+    "slash": "/mens-formal",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "microsoft",
+    "slash": "/microsoft",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "mlb",
+    "slash": "/mlb",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "mma",
+    "slash": "/mma",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "mobile-phones",
+    "slash": "/mobile-phones",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "molecularbiology",
+    "slash": "/molecularbiology",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "money",
+    "slash": "/money",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "money-transfer",
+    "slash": "/money-transfer",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "montessori",
+    "slash": "/montessori",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "mormon",
+    "slash": "/mormon",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "mortgage",
+    "slash": "/mortgage",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "motorcycle-gear",
+    "slash": "/motorcycle-gear",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "motorcycles",
+    "slash": "/motorcycles",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "movies",
+    "slash": "/movies",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "multiple-sclerosis",
+    "slash": "/multiple-sclerosis",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "music",
+    "slash": "/music",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "music-festivals",
+    "slash": "/music-festivals",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "musical-instruments",
+    "slash": "/musical-instruments",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "mysql",
+    "slash": "/mysql",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "mythology",
+    "slash": "/mythology",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "nanotechnology",
+    "slash": "/nanotechnology",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "naruto",
+    "slash": "/naruto",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "national-parks",
+    "slash": "/national-parks",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "nba",
+    "slash": "/nba",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "news",
+    "slash": "/news",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "nfl",
+    "slash": "/nfl",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "nhl",
+    "slash": "/nhl",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "nutrition",
+    "slash": "/nutrition",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "office-furniture",
+    "slash": "/office-furniture",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "office-supplies",
+    "slash": "/office-supplies",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "old-time-radio",
+    "slash": "/old-time-radio",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "olympics",
+    "slash": "/olympics",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "online-dating",
+    "slash": "/online-dating",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "opera",
+    "slash": "/opera",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "orchestra-instruments",
+    "slash": "/orchestra-instruments",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "organic",
+    "slash": "/organic",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "outdoor-furniture",
+    "slash": "/outdoor-furniture",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "ows",
+    "slash": "/ows",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "paint-supplies",
+    "slash": "/paint-supplies",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "paintball",
+    "slash": "/paintball",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "paleontology",
+    "slash": "/paleontology",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "parenting",
+    "slash": "/parenting",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "parkinsons",
+    "slash": "/parkinsons",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "party-supplies",
+    "slash": "/party-supplies",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "password-management",
+    "slash": "/password-management",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "peace-corps",
+    "slash": "/peace-corps",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "pediatrics",
+    "slash": "/pediatrics",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "people-search",
+    "slash": "/people-search",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "perfumes",
+    "slash": "/perfumes",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "philosophy-journals",
+    "slash": "/philosophy-journals",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "phone-accessories",
+    "slash": "/phone-accessories",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "phone-cards",
+    "slash": "/phone-cards",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "photo-equipment",
+    "slash": "/photo-equipment",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "photo-sharing",
+    "slash": "/photo-sharing",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "photo-software",
+    "slash": "/photo-software",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "photoblogs",
+    "slash": "/photoblogs",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "photography",
+    "slash": "/photography",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "php",
+    "slash": "/php",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "physics",
+    "slash": "/physics",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "pianos",
+    "slash": "/pianos",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "plasticsurgery",
+    "slash": "/plasticsurgery",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "plus-size",
+    "slash": "/plus-size",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "poetry",
+    "slash": "/poetry",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "pokemon",
+    "slash": "/pokemon",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "politics",
+    "slash": "/politics",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "pollution",
+    "slash": "/pollution",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "posters",
+    "slash": "/posters",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "postgresql",
+    "slash": "/postgresql",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "pregnancy",
+    "slash": "/pregnancy",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "presidents",
+    "slash": "/presidents",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "productivity",
+    "slash": "/productivity",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "profile",
+    "slash": "/profile",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "programming",
+    "slash": "/programming",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "prom",
+    "slash": "/prom",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "promotional-products",
+    "slash": "/promotional-products",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "psych",
+    "slash": "/psych",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "public-libraries",
+    "slash": "/public-libraries",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "public-radio",
+    "slash": "/public-radio",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "public-relations",
+    "slash": "/public-relations",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "quilting",
+    "slash": "/quilting",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "quotations",
+    "slash": "/quotations",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "racing",
+    "slash": "/racing",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "radio",
+    "slash": "/radio",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "railroad-museums",
+    "slash": "/railroad-museums",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "real-estate",
+    "slash": "/real-estate",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "real-estate-appraisal",
+    "slash": "/real-estate-appraisal",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "reality-tv",
+    "slash": "/reality-tv",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "recipes",
+    "slash": "/recipes",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "relationship-advice",
+    "slash": "/relationship-advice",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "religion",
+    "slash": "/religion",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "retirement",
+    "slash": "/retirement",
+    "category": "finance",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "reviews",
+    "slash": "/reviews",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "ringtones",
+    "slash": "/ringtones",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "robotics",
+    "slash": "/robotics",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "role playing games",
+    "slash": "/role playing games",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "rubber-stamps",
+    "slash": "/rubber-stamps",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "rugby",
+    "slash": "/rugby",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "rugs",
+    "slash": "/rugs",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "running",
+    "slash": "/running",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "safari",
+    "slash": "/safari",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sailing",
+    "slash": "/sailing",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "scholarships",
+    "slash": "/scholarships",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "science",
+    "slash": "/science",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "science-fair",
+    "slash": "/science-fair",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "science-museums",
+    "slash": "/science-museums",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "scrapbooking",
+    "slash": "/scrapbooking",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "security-software",
+    "slash": "/security-software",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sem",
+    "slash": "/sem",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "seoblogs",
+    "slash": "/seoblogs",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "seosites",
+    "slash": "/seosites",
+    "category": "business",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sesame-street",
+    "slash": "/sesame-street",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sewing",
+    "slash": "/sewing",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "shakespeare",
+    "slash": "/shakespeare",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "shoes",
+    "slash": "/shoes",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "shop",
+    "slash": "/shop",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "skateboarding",
+    "slash": "/skateboarding",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "skiing",
+    "slash": "/skiing",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sleep",
+    "slash": "/sleep",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "smallbusiness",
+    "slash": "/smallbusiness",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "soap-operas",
+    "slash": "/soap-operas",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "soapmaking",
+    "slash": "/soapmaking",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "soccer",
+    "slash": "/soccer",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "social-news",
+    "slash": "/social-news",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sociology",
+    "slash": "/sociology",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sociology-journals",
+    "slash": "/sociology-journals",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "softball",
+    "slash": "/softball",
+    "category": "recreation",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "solar-energy",
+    "slash": "/solar-energy",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sopa",
+    "slash": "/sopa",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "special-education",
+    "slash": "/special-education",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "spinal-tap",
+    "slash": "/spinal-tap",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sports",
+    "slash": "/sports",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sql",
+    "slash": "/sql",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sqlserver",
+    "slash": "/sqlserver",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "state-symbols",
+    "slash": "/state-symbols",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "stock",
+    "slash": "/stock",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "stock-photo",
+    "slash": "/stock-photo",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "substance-abuse",
+    "slash": "/substance-abuse",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "sunglasses",
+    "slash": "/sunglasses",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "super-bowl",
+    "slash": "/super-bowl",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "swimming",
+    "slash": "/swimming",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "swimwear",
+    "slash": "/swimwear",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "t-shirts",
+    "slash": "/t-shirts",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "tabs",
+    "slash": "/tabs",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "tai-chi",
+    "slash": "/tai-chi",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "taxes",
+    "slash": "/taxes",
+    "category": "finance",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "tea",
+    "slash": "/tea",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "teaching",
+    "slash": "/teaching",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "telescopes",
+    "slash": "/telescopes",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "tennis",
+    "slash": "/tennis",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "term-papers",
+    "slash": "/term-papers",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "test-prep",
+    "slash": "/test-prep",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "textbooks",
+    "slash": "/textbooks",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "thanksgiving",
+    "slash": "/thanksgiving",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "theological-libraries",
+    "slash": "/theological-libraries",
+    "category": "reference",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "tickets",
+    "slash": "/tickets",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "ties",
+    "slash": "/ties",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "tile",
+    "slash": "/tile",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "title-insurance",
+    "slash": "/title-insurance",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "tolkien",
+    "slash": "/tolkien",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "tools",
+    "slash": "/tools",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "toy-museums",
+    "slash": "/toy-museums",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "toys",
+    "slash": "/toys",
+    "category": "shopping",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "traffic",
+    "slash": "/traffic",
+    "category": "autos",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "travel",
+    "slash": "/travel",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "tv",
+    "slash": "/tv",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "uniforms",
+    "slash": "/uniforms",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "united-nations",
+    "slash": "/united-nations",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "urban-planning",
+    "slash": "/urban-planning",
+    "category": "government",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "user",
+    "slash": "/user",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "vaccines",
+    "slash": "/vaccines",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "vacuums",
+    "slash": "/vacuums",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "valentines-day",
+    "slash": "/valentines-day",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "videos",
+    "slash": "/videos",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "view",
+    "slash": "/view",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "voc-ed",
+    "slash": "/voc-ed",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "waldorf",
+    "slash": "/waldorf",
+    "category": "education",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "watches",
+    "slash": "/watches",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "water-filters",
+    "slash": "/water-filters",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "weather",
+    "slash": "/weather",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "web-browsers",
+    "slash": "/web-browsers",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "web-development",
+    "slash": "/web-development",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "webcomics",
+    "slash": "/webcomics",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "wedding",
+    "slash": "/wedding",
+    "category": "culture",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "western-wear",
+    "slash": "/western-wear",
+    "category": "fashion",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "whisky",
+    "slash": "/whisky",
+    "category": "food",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "wind-energy",
+    "slash": "/wind-energy",
+    "category": "science",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "windows",
+    "slash": "/windows",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "windows-and-doors",
+    "slash": "/windows-and-doors",
+    "category": "home",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "wine",
+    "slash": "/wine",
+    "category": "builtin",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "wnba",
+    "slash": "/wnba",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "womens-basketball",
+    "slash": "/womens-basketball",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "womens-history",
+    "slash": "/womens-history",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "wordpress",
+    "slash": "/wordpress",
+    "category": "computers",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "world-history",
+    "slash": "/world-history",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "world-instruments",
+    "slash": "/world-instruments",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "wrestling",
+    "slash": "/wrestling",
+    "category": "sports",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "writing",
+    "slash": "/writing",
+    "category": "humanities",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "yarn-bombing",
+    "slash": "/yarn-bombing",
+    "category": "arts",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "yoga",
+    "slash": "/yoga",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "yoga-equipment",
+    "slash": "/yoga-equipment",
+    "category": "health",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
+  },
+  {
+    "name": "zines",
+    "slash": "/zines",
+    "category": "media",
+    "description": "",
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "direct"
+    }
   }
-}
+]
