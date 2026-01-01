@@ -1,0 +1,12 @@
+{
+  "schema": "slash-topics.pack.v0",
+  "name": "slash-topics/core",
+  "version": "0.1.0",
+  "description": "Core slash topic taxonomy seeded from blekko (2012), normalized and governed for commons use.",
+  "license": "MIT",
+  "maintainer": "SocioProphet",
+  "status": "seed",
+  "inputs": [
+    "data/blekko/blekko_slashtags_2012-10-15.json"
+  ]
+}

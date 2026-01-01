@@ -1,0 +1,230 @@
+[
+  {
+    "name": "arts",
+    "slash": "/category/arts",
+    "category": "derived",
+    "description": "Derived category lens from blekko (arts)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "autos",
+    "slash": "/category/autos",
+    "category": "derived",
+    "description": "Derived category lens from blekko (autos)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "business",
+    "slash": "/category/business",
+    "category": "derived",
+    "description": "Derived category lens from blekko (business)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "computers",
+    "slash": "/category/computers",
+    "category": "derived",
+    "description": "Derived category lens from blekko (computers)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "culture",
+    "slash": "/category/culture",
+    "category": "derived",
+    "description": "Derived category lens from blekko (culture)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "education",
+    "slash": "/category/education",
+    "category": "derived",
+    "description": "Derived category lens from blekko (education)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "fashion",
+    "slash": "/category/fashion",
+    "category": "derived",
+    "description": "Derived category lens from blekko (fashion)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "finance",
+    "slash": "/category/finance",
+    "category": "derived",
+    "description": "Derived category lens from blekko (finance)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "food",
+    "slash": "/category/food",
+    "category": "derived",
+    "description": "Derived category lens from blekko (food)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "government",
+    "slash": "/category/government",
+    "category": "derived",
+    "description": "Derived category lens from blekko (government)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "health",
+    "slash": "/category/health",
+    "category": "derived",
+    "description": "Derived category lens from blekko (health)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "home",
+    "slash": "/category/home",
+    "category": "derived",
+    "description": "Derived category lens from blekko (home)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "humanities",
+    "slash": "/category/humanities",
+    "category": "derived",
+    "description": "Derived category lens from blekko (humanities)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "media",
+    "slash": "/category/media",
+    "category": "derived",
+    "description": "Derived category lens from blekko (media)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "recreation",
+    "slash": "/category/recreation",
+    "category": "derived",
+    "description": "Derived category lens from blekko (recreation)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "reference",
+    "slash": "/category/reference",
+    "category": "derived",
+    "description": "Derived category lens from blekko (reference)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "science",
+    "slash": "/category/science",
+    "category": "derived",
+    "description": "Derived category lens from blekko (science)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "shopping",
+    "slash": "/category/shopping",
+    "category": "derived",
+    "description": "Derived category lens from blekko (shopping)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  },
+  {
+    "name": "sports",
+    "slash": "/category/sports",
+    "category": "derived",
+    "description": "Derived category lens from blekko (sports)",
+    "derived": true,
+    "source": {
+      "origin": "blekko",
+      "snapshot": "https://web.archive.org/web/20121103001349/http%3A//blekko.com/tag/show",
+      "kind": "inferred"
+    }
+  }
+]

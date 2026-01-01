@@ -1,0 +1,19 @@
+{
+  "schema": "slash-topics.manifest.v0",
+  "pack": "slash-topics/derived@0.1.0",
+  "artifacts": {
+    "topics.json": {
+      "count": 19,
+      "blake3": "hash://blake3/f5ea76a89810c60ab1f02564042a966b4e99e7f80cacea7b76ec259c17ad7d38"
+    },
+    "pack.json": {
+      "blake3": "hash://blake3/49fec32e677cda82db60869a51e57d8c32db8a1e9b0877d245f3b9564b360f68"
+    }
+  },
+  "canonicalization": {
+    "format": "json",
+    "ordering": "lexicographic",
+    "encoding": "utf-8",
+    "hash": "blake3"
+  }
+}
