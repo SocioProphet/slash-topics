@@ -1,108 +1,139 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "slash-topics.schema.v0.1",
+  "title": "SlashTopics Pack Schema v0.1",
+  "type": "object",
+  "required": [
+    "schema",
+    "pack",
+    "version",
+    "snapshot",
+    "topics"
+  ],
   "properties": {
-    "description": {
-      "type": "string"
+    "schema": {
+      "const": "slash-topics.pack.v0.1"
     },
-    "name": {
-      "description": "e.g., core",
-      "type": "string"
-    },
-    "namespace": {
-      "description": "e.g., protocols/slash-topics",
-      "type": "string"
-    },
-    "operators": {
-      "items": {
-        "properties": {
-          "egress_required": {
-            "default": false,
-            "type": "boolean"
-          },
-          "notes": {
-            "type": "string"
-          },
-          "slug": {
-            "description": "e.g., /dr=YYYY-YYYY",
-            "type": "string"
-          },
-          "type": {
-            "enum": [
-              "operator",
-              "integration"
-            ],
-            "type": "string"
-          }
-        },
-        "required": [
-          "slug",
-          "type"
-        ],
-        "type": "object"
-      },
-      "type": "array"
-    },
-    "pack_version": {
-      "type": "string"
-    },
-    "topics": {
-      "items": {
-        "properties": {
-          "defaults_posture": {
-            "enum": [
-              "default_on",
-              "opt_in",
-              "blocked"
-            ],
-            "type": "string"
-          },
-          "kind": {
-            "enum": [
-              "topic",
-              "category",
-              "vertical"
-            ],
-            "type": "string"
-          },
-          "slug": {
-            "description": "e.g., /science",
-            "type": "string"
-          },
-          "summary": {
-            "type": "string"
-          },
-          "tags": {
-            "items": {
-              "type": "string"
-            },
-            "type": "array"
-          },
-          "title": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "slug",
-          "kind",
-          "title"
-        ],
-        "type": "object"
-      },
-      "type": "array"
+    "pack": {
+      "type": "string",
+      "minLength": 1
     },
     "version": {
-      "description": "semver",
-      "type": "string"
+      "type": "string",
+      "minLength": 1
+    },
+    "snapshot": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonicalization": {
+      "type": "object",
+      "required": [
+        "format",
+        "ordering",
+        "encoding",
+        "hash"
+      ],
+      "properties": {
+        "format": {
+          "enum": [
+            "json"
+          ]
+        },
+        "ordering": {
+          "enum": [
+            "lexicographic"
+          ]
+        },
+        "encoding": {
+          "enum": [
+            "utf-8"
+          ]
+        },
+        "hash": {
+          "enum": [
+            "blake3"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "slash",
+          "name",
+          "category",
+          "source"
+        ],
+        "properties": {
+          "slash": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "category": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string"
+          },
+          "derived": {
+            "type": "boolean"
+          },
+          "source": {
+            "type": "object",
+            "required": [
+              "origin",
+              "snapshot"
+            ],
+            "properties": {
+              "origin": {
+                "type": "string",
+                "minLength": 1
+              },
+              "snapshot": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          },
+          "policy": {
+            "type": "object",
+            "properties": {
+              "default_posture": {
+                "enum": [
+                  "allow",
+                  "redact",
+                  "quarantine",
+                  "deny",
+                  "require-signature"
+                ]
+              },
+              "labels": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
     }
   },
-  "required": [
-    "pack_version",
-    "namespace",
-    "name",
-    "version",
-    "topics",
-    "operators"
-  ],
-  "title": "SlashTopicsPack",
-  "type": "object"
+  "additionalProperties": true
 }
