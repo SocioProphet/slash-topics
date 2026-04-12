@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/slash-topics/spec/query/query.request.schema.v0.1.json",
+  "title": "QueryRequest",
+  "type": "object",
+  "required": ["version", "query_text", "created_at", "scope_ref", "policy_tags"],
+  "properties": {
+    "version": { "const": "0.1" },
+    "query_text": { "type": "string" },
+    "created_at": { "type": "string" },
+    "scope_ref": { "type": "string" },
+    "capsule_ref": { "type": "string" },
+    "intent": {
+      "type": "string",
+      "description": "Optional intent classifier output (news, reference, research, etc.)."
+    },
+    "constraints": {
+      "type": "object",
+      "properties": {
+        "time_range": { "type": "string" },
+        "language": { "type": "string" },
+        "region": { "type": "string" }
+      }
+    },
+    "policy_tags": {
+      "type": "object",
+      "properties": {
+        "privacy_class": { "type": "string" },
+        "retention": { "type": "string" },
+        "redistribution": { "type": "string" }
+      }
+    }
+  }
+}
