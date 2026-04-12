@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/slash-topics/spec/operators/operator.schema.v0.1.json",
+  "title": "OperatorSpec",
+  "type": "object",
+  "required": [
+    "version",
+    "op_id",
+    "family",
+    "effect",
+    "inputs",
+    "outputs",
+    "emits"
+  ],
+  "properties": {
+    "version": { "const": "0.1" },
+    "op_id": { "type": "string" },
+    "family": {
+      "type": "string",
+      "enum": ["filter", "selector", "aggregator", "composter"]
+    },
+    "effect": {
+      "type": "string",
+      "enum": ["pure", "connector", "sensitive", "publish"]
+    },
+    "description": { "type": "string" },
+    "inputs": {
+      "type": "object",
+      "properties": {
+        "query_types": { "type": "array", "items": { "type": "string" } },
+        "carrier_types": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "properties": {
+        "carrier_types": { "type": "array", "items": { "type": "string" } },
+        "artifact_types": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "params_schema_ref": { "type": "string" },
+    "emits": {
+      "type": "array",
+      "description": "Contracts emitted for audit/replay (e.g., DecisionTrace, MembraneDecision, CapsuleOutput).",
+      "items": { "type": "string" }
+    },
+    "budgets": {
+      "type": "object",
+      "properties": {
+        "max_calls": { "type": "integer" },
+        "max_bytes": { "type": "integer" }
+      }
+    }
+  }
+}
