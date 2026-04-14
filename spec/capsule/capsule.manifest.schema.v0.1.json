@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/slash-topics/spec/capsule/capsule.manifest.schema.v0.1.json",
+  "title": "CapsuleManifest",
+  "type": "object",
+  "required": [
+    "version",
+    "capsule_id",
+    "created_at",
+    "namespace",
+    "operator_chain",
+    "inputs",
+    "outputs",
+    "policy_requirements",
+    "signing"
+  ],
+  "properties": {
+    "version": { "const": "0.1" },
+    "capsule_id": { "type": "string" },
+    "created_at": { "type": "string" },
+    "namespace": { "type": "string", "description": "E.g. /me, /org, /commons." },
+    "description": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "operator_chain": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["op_id", "effect"],
+        "properties": {
+          "op_id": { "type": "string" },
+          "version": { "type": "string" },
+          "effect": {
+            "type": "string",
+            "enum": ["pure", "connector", "sensitive", "publish"]
+          },
+          "params": { "type": "object" }
+        }
+      }
+    },
+    "inputs": {
+      "type": "object",
+      "required": ["query_types"],
+      "properties": {
+        "query_types": { "type": "array", "items": { "type": "string" } },
+        "topic_pack_refs": { "type": "array", "items": { "type": "string" } },
+        "carrier_refs": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "required": ["artifact_types"],
+      "properties": {
+        "artifact_types": { "type": "array", "items": { "type": "string" } },
+        "contracts": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "policy_requirements": {
+      "type": "object",
+      "required": ["membrane_pack_refs"],
+      "properties": {
+        "membrane_pack_refs": { "type": "array", "items": { "type": "string" } },
+        "gates": { "type": "array", "items": { "type": "string" } },
+        "budgets": { "type": "object" }
+      }
+    },
+    "signing": {
+      "type": "object",
+      "required": ["key_ref"],
+      "properties": {
+        "key_ref": { "type": "string" },
+        "sig_ref": { "type": "string" },
+        "algo": { "type": "string" }
+      }
+    },
+    "fixtures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "input_ref", "expected_output_refs"],
+        "properties": {
+          "name": { "type": "string" },
+          "input_ref": { "type": "string" },
+          "expected_output_refs": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}
