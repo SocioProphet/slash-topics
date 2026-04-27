@@ -20,6 +20,6 @@ jobs:
       - name: Validate Lattice topic packs
         run: python scripts/validate_lattice_topic_pack.py
       - name: Replay Lattice topic pack against platform enrichment fixture
-        run: python scripts/replay_lattice_topics.py protocols/lattice/platform-asset-topic-pack.v1.json fixtures/lattice/platform-asset-enrichment-set.example.json --output build/lattice-topic-replay.json
+        run: python scripts/replay_lattice_topics.py protocols/lattice/platform-asset-topic-pack.v1.json fixtures/lattice/platform-asset-enrichment-set.example.json --output lattice-topic-replay.json
       - name: Validate Lattice topic replay report
-        run: python scripts/validate_lattice_topic_replay.py build/lattice-topic-replay.json
+        run: python scripts/validate_lattice_topic_replay.py lattice-topic-replay.json
