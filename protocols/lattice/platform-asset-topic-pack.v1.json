@@ -1,0 +1,27 @@
+{
+  "apiVersion": "slash-topics.socioprophet.dev/v1",
+  "kind": "SlashTopicPack",
+  "metadata": {
+    "name": "lattice-platform-assets",
+    "version": "0.1.0",
+    "description": "Governed slash-topic candidates for Prophet Lattice platform asset records."
+  },
+  "subjects": [
+    {
+      "subjectKind": "PlatformAssetRecord",
+      "match": {"assetKind": "runtime-asset"},
+      "topics": ["/lattice", "/lattice/runtime", "/lattice/forge", "/forge", "/runtime", "/supply-chain", "/policy", "/contracts", "/modeling"]
+    },
+    {
+      "subjectKind": "PlatformAssetRecord",
+      "match": {"assetKind": "boot-release-set"},
+      "topics": ["/lattice", "/lattice/boot", "/sourceos", "/sourceos/boot", "/sourceos/recovery", "/release", "/policy", "/contracts", "/modeling"]
+    }
+  ],
+  "governance": {
+    "signedPackRequired": true,
+    "replayable": true,
+    "canonicalProducer": "SocioProphet/prophet-platform",
+    "canonicalRecordKind": "PlatformAssetRecord"
+  }
+}
