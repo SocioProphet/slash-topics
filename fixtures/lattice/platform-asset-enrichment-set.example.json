@@ -1,0 +1,34 @@
+{
+  "apiVersion": "prophet.socioprophet.dev/v1",
+  "kind": "PlatformAssetRecordEnrichmentSet",
+  "enrichments": [
+    {
+      "apiVersion": "prophet.socioprophet.dev/v1",
+      "kind": "PlatformAssetRecordEnrichment",
+      "assetId": "runtime-asset:prophet-python-ml:0.1.0",
+      "search": {
+        "facets": {
+          "assetKind": "runtime-asset",
+          "producerRepo": "SocioProphet/lattice-forge",
+          "promotionChannel": "dev",
+          "compatibilitySurfaces": ["jupyter", "ray", "beam", "agentplane", "sourceos-user", "prophet-platform"]
+        }
+      },
+      "slashTopics": ["/lattice", "/lattice/runtime", "/forge", "/runtime", "/supply-chain", "/policy", "/contracts", "/modeling"]
+    },
+    {
+      "apiVersion": "prophet.socioprophet.dev/v1",
+      "kind": "PlatformAssetRecordEnrichment",
+      "assetId": "boot-release-set:sourceos-recovery-demo:0.1.0",
+      "search": {
+        "facets": {
+          "assetKind": "boot-release-set",
+          "producerRepo": "SourceOS-Linux/sourceos-boot",
+          "promotionChannel": null,
+          "compatibilitySurfaces": ["sourceos-boot", "prophet-platform"]
+        }
+      },
+      "slashTopics": ["/lattice", "/lattice/boot", "/sourceos", "/sourceos/boot", "/sourceos/recovery", "/release", "/policy", "/contracts", "/modeling"]
+    }
+  ]
+}
