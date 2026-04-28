@@ -1,0 +1,71 @@
+{
+  "apiVersion": "slashtopics.socioprophet.dev/v0",
+  "kind": "TopicPack",
+  "metadata": {
+    "topicPackId": "topic-pack:lattice-studio-workspace:v0",
+    "name": "Lattice Studio Workspace Grounding",
+    "version": "0.1.0",
+    "producerRepo": "SocioProphet/slash-topics"
+  },
+  "spec": {
+    "scope": "lattice-studio-workspace",
+    "sourceObjectKinds": [
+      "PlatformAssetRecord",
+      "PlatformAssetRecordEnrichment",
+      "WorkspaceSource",
+      "WorkspaceSourceBinding",
+      "WorkspaceSynthesisArtifact",
+      "WorkspaceActionReceipt"
+    ],
+    "topics": [
+      {"topic": "/lattice", "description": "Lattice platform asset graph"},
+      {"topic": "/lattice/studio", "description": "Lattice Studio workbench surfaces"},
+      {"topic": "/workspace", "description": "Workspace and office artifact surface"},
+      {"topic": "/workspace/source", "description": "Workspace source records bound into Studio sessions"},
+      {"topic": "/workspace/docs", "description": "Document source surface"},
+      {"topic": "/workspace/sheets", "description": "Spreadsheet and tabular source surface"},
+      {"topic": "/workspace/slides", "description": "Presentation source and publication surface"},
+      {"topic": "/workspace/binding", "description": "Binding of workspace sources to notebook sessions"},
+      {"topic": "/workspace/synthesis", "description": "Source-grounded synthesis artifact"},
+      {"topic": "/source-grounded-synthesis", "description": "Outputs whose claims cite governed source objects"},
+      {"topic": "/workspace/publication", "description": "Publication or draft emitted back to workspace surfaces"},
+      {"topic": "/receipt", "description": "Action receipt and replay/audit record"},
+      {"topic": "/evidence", "description": "Evidence-linked artifact"},
+      {"topic": "/governance", "description": "Policy and governance scope"},
+      {"topic": "/provenance", "description": "Source, runtime, and output lineage"}
+    ],
+    "mappingRules": [
+      {
+        "when": {"assetKind": "workspace-docs"},
+        "topics": ["/workspace", "/workspace/docs", "/workspace/source", "/source-grounding"]
+      },
+      {
+        "when": {"assetKind": "workspace-sheets"},
+        "topics": ["/workspace", "/workspace/sheets", "/data", "/analytics"]
+      },
+      {
+        "when": {"assetKind": "workspace-slides"},
+        "topics": ["/workspace", "/workspace/slides", "/publication"]
+      },
+      {
+        "when": {"assetKind": "workspace-source-binding"},
+        "topics": ["/workspace/binding", "/notebook/session", "/runtime/binding"]
+      },
+      {
+        "when": {"assetKind": "workspace-synthesis-artifact"},
+        "topics": ["/workspace/synthesis", "/source-grounded-synthesis", "/publication/draft"]
+      },
+      {
+        "when": {"assetKindPrefix": "workspace-action-"},
+        "topics": ["/workspace/action", "/workspace/publication", "/receipt"]
+      }
+    ],
+    "policy": {
+      "defaultVisibility": "policy-scoped",
+      "requiresEvidenceCorrelation": true,
+      "requiresPolicyRef": true,
+      "canonicalIdentityObject": "PlatformAssetRecord",
+      "nonMutationRule": "topic enrichments must not overwrite canonical PlatformAssetRecord identity"
+    }
+  }
+}
