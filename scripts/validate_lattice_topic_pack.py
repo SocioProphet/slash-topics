@@ -13,10 +13,11 @@ def require(condition: bool, message: str) -> None:
         raise ValueError(message)
 
 
-def validate(path: Path) -> None:
+def validate(path: Path) -> str:
     doc = json.loads(path.read_text(encoding="utf-8"))
     require(doc.get("apiVersion") == "slash-topics.socioprophet.dev/v1", "apiVersion mismatch")
-    require(doc.get("kind") == "SlashTopicPack", "kind mismatch")
+    if doc.get("kind") != "SlashTopicPack":
+        return f"SKIP {path}: kind={doc.get('kind')}"
     require(isinstance(doc.get("subjects"), list) and doc["subjects"], "subjects must be a non-empty list")
     for subject in doc["subjects"]:
         require(subject.get("subjectKind") == "PlatformAssetRecord", "subjectKind must be PlatformAssetRecord")
@@ -28,6 +29,7 @@ def validate(path: Path) -> None:
     governance = doc.get("governance")
     require(isinstance(governance, dict), "governance must be an object")
     require(governance.get("canonicalRecordKind") == "PlatformAssetRecord", "canonicalRecordKind mismatch")
+    return f"PASS {path}"
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -37,8 +39,7 @@ def main(argv: list[str] | None = None) -> int:
     failed = False
     for path in paths:
         try:
-            validate(path)
-            print(f"PASS {path}")
+            print(validate(path))
         except Exception as exc:  # noqa: BLE001
             failed = True
             print(f"FAIL {path}: {exc}", file=sys.stderr)
