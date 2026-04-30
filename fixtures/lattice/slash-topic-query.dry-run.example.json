@@ -1,0 +1,101 @@
+{
+  "_comment": "Dry-run fixture for the slash-topic-query Lattice adapter. No topic packs are read; no search is executed.",
+  "_schema": "specs/LatticeQueryAdapter_v0.1.json",
+
+  "input": {
+    "adapterKind": "slash-topic-query",
+    "adapterVersion": "0.1",
+    "latticeBackend": {
+      "plane": "FederatedQueryPlane",
+      "backendId": "slash-topic-query",
+      "routeRef": "hash://blake3/aabbcc112233"
+    },
+    "topicScope": {
+      "topicSlugs": ["/science", "/reference"]
+    },
+    "policyMembrane": {
+      "membraneRef": "hash://blake3/ddeeff445566",
+      "requiredDecision": "ALLOW",
+      "policyTags": {
+        "privacy_class": "standard",
+        "retention": "session",
+        "redistribution": "none"
+      }
+    },
+    "deterministicReceipt": {
+      "mustEmit": true,
+      "requiredFields": [
+        "adapterKind",
+        "adapterVersion",
+        "topicSlugs",
+        "topicPackRef",
+        "topicPackDigest",
+        "membraneRef",
+        "membraneDecision",
+        "queryRef",
+        "resultSetRef",
+        "executedAt",
+        "rng_seed_or_none",
+        "canonicalization"
+      ],
+      "canonicalization": {
+        "format": "json",
+        "ordering": "lexicographic",
+        "encoding": "utf-8",
+        "hash": "blake3"
+      },
+      "bounded_nondeterminism": false
+    },
+    "provenance": {
+      "replayable": true,
+      "provenanceRef": "prov://slash-topics/science-reference@dry-run-001"
+    },
+    "scopedSearch": {
+      "queryRef": "hash://blake3/query001aabbcc",
+      "resultSetSchema": "search.resultset.schema.v0.1",
+      "maxHits": 10,
+      "constraints": {
+        "language": "en"
+      }
+    },
+    "dryRun": {
+      "enabled": true,
+      "validateRoute": true,
+      "validatePolicy": true,
+      "noPackRead": true,
+      "noSearchExecute": true
+    }
+  },
+
+  "expectedOutput": {
+    "dryRun": true,
+    "routeStatus": "VALID",
+    "membraneStatus": "REACHABLE",
+    "topicScopeStatus": "VALID",
+    "receipt": {
+      "adapterKind": "slash-topic-query",
+      "adapterVersion": "0.1",
+      "dryRun": true,
+      "topicSlugs": ["/science", "/reference"],
+      "topicPackRef": null,
+      "topicPackDigest": null,
+      "membraneRef": "hash://blake3/ddeeff445566",
+      "membraneDecision": "ALLOW",
+      "queryRef": "hash://blake3/query001aabbcc",
+      "resultSetRef": null,
+      "executedAt": "2026-04-30T22:00:00Z",
+      "rng_seed_or_none": null,
+      "canonicalization": {
+        "format": "json",
+        "ordering": "lexicographic",
+        "encoding": "utf-8",
+        "hash": "blake3"
+      }
+    },
+    "invariantsVerified": [
+      "No topic pack bytes were read.",
+      "No search query was issued.",
+      "Receipt does not include resultSetRef data."
+    ]
+  }
+}

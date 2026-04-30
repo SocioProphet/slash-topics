@@ -1,0 +1,112 @@
+{
+  "_comment": "Live-run fixture for the slash-topic-query Lattice adapter. Topic packs are read, search is executed, and a full receipt is emitted.",
+  "_schema": "specs/LatticeQueryAdapter_v0.1.json",
+
+  "input": {
+    "adapterKind": "slash-topic-query",
+    "adapterVersion": "0.1",
+    "latticeBackend": {
+      "plane": "FederatedQueryPlane",
+      "backendId": "slash-topic-query",
+      "routeRef": "hash://blake3/aabbcc112233"
+    },
+    "topicScope": {
+      "topicSlugs": ["/science", "/reference"],
+      "topicPackRef": "topicpack://slash-topics/core@0.1.0",
+      "topicPackDigest": "hash://blake3/49fec32e677cda82db60869a51e57d8c32db8a1e9b0877d245f3b9564b360f68"
+    },
+    "policyMembrane": {
+      "membraneRef": "hash://blake3/ddeeff445566",
+      "requiredDecision": "ALLOW",
+      "policyTags": {
+        "privacy_class": "standard",
+        "retention": "session",
+        "redistribution": "none"
+      }
+    },
+    "deterministicReceipt": {
+      "mustEmit": true,
+      "requiredFields": [
+        "adapterKind",
+        "adapterVersion",
+        "topicSlugs",
+        "topicPackRef",
+        "topicPackDigest",
+        "membraneRef",
+        "membraneDecision",
+        "queryRef",
+        "resultSetRef",
+        "executedAt",
+        "rng_seed_or_none",
+        "canonicalization"
+      ],
+      "canonicalization": {
+        "format": "json",
+        "ordering": "lexicographic",
+        "encoding": "utf-8",
+        "hash": "blake3"
+      },
+      "bounded_nondeterminism": false
+    },
+    "provenance": {
+      "replayable": true,
+      "provenanceRef": "prov://slash-topics/science-reference@live-001",
+      "localityClass": "warm-local",
+      "packLoadEvents": [
+        {
+          "event_type": "context.pack.selected",
+          "payload": {
+            "pack_ids": ["topicpack://slash-topics/core@0.1.0"],
+            "pack_digests": ["hash://blake3/49fec32e677cda82db60869a51e57d8c32db8a1e9b0877d245f3b9564b360f68"],
+            "policy_bundle_id": "commons-default@0.1.0",
+            "locality_class": "warm-local"
+          }
+        },
+        {
+          "event_type": "context.pack.fetched",
+          "payload": {
+            "total_bytes": 133325,
+            "cache_hits": 1,
+            "cache_misses": 0,
+            "working_set_hit_rate": 1.0,
+            "remote_fetch_count": 0
+          }
+        }
+      ]
+    },
+    "scopedSearch": {
+      "queryRef": "hash://blake3/query002ddeeff",
+      "resultSetSchema": "search.resultset.schema.v0.1",
+      "maxHits": 10,
+      "constraints": {
+        "language": "en"
+      }
+    }
+  },
+
+  "expectedOutput": {
+    "dryRun": false,
+    "membraneDecision": "ALLOW",
+    "resultSetRef": "hash://blake3/results002aabbcc",
+    "receipt": {
+      "adapterKind": "slash-topic-query",
+      "adapterVersion": "0.1",
+      "dryRun": false,
+      "topicSlugs": ["/science", "/reference"],
+      "topicPackRef": "topicpack://slash-topics/core@0.1.0",
+      "topicPackDigest": "hash://blake3/49fec32e677cda82db60869a51e57d8c32db8a1e9b0877d245f3b9564b360f68",
+      "membraneRef": "hash://blake3/ddeeff445566",
+      "membraneDecision": "ALLOW",
+      "queryRef": "hash://blake3/query002ddeeff",
+      "resultSetRef": "hash://blake3/results002aabbcc",
+      "executedAt": "2026-04-30T22:01:00Z",
+      "rng_seed_or_none": null,
+      "canonicalization": {
+        "format": "json",
+        "ordering": "lexicographic",
+        "encoding": "utf-8",
+        "hash": "blake3"
+      }
+    }
+  }
+}

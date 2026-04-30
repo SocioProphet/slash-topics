@@ -1,0 +1,111 @@
+{
+  "apiVersion": "slash-topics.socioprophet.dev/v1",
+  "kind": "LatticeQueryAdapterProtocol",
+  "metadata": {
+    "name": "slash-topic-query",
+    "version": "0.1.0",
+    "description": "Protocol definition for the slash-topic-query adapter in Lattice FederatedQueryPlane. Maps Lattice governed query routing to Slash Topics topic packs, policy membranes, deterministic receipts, and scoped search."
+  },
+  "lattice": {
+    "plane": "FederatedQueryPlane",
+    "backendId": "slash-topic-query",
+    "backendLanguage": "slash-topic-query",
+    "specRef": "specs/LatticeQueryAdapter_v0.1.json"
+  },
+  "lifecycle": {
+    "dryRun": {
+      "description": "Validates route and policy without reading topic packs or executing search.",
+      "steps": [
+        {
+          "step": 1,
+          "id": "resolve-route",
+          "description": "Resolve latticeBackend.routeRef against the Lattice route registry. Reject if the route is unknown, expired, or unauthorised.",
+          "readsTopicPack": false,
+          "executesSearch": false
+        },
+        {
+          "step": 2,
+          "id": "validate-topic-scope",
+          "description": "Verify that every slug in topicScope.topicSlugs has a valid slash-topic path prefix (starts with '/'). If topicPackRef is present, verify the reference is syntactically valid without fetching pack bytes.",
+          "readsTopicPack": false,
+          "executesSearch": false
+        },
+        {
+          "step": 3,
+          "id": "resolve-membrane",
+          "description": "Resolve policyMembrane.membraneRef against the policy registry and confirm that requiredDecision is a reachable outcome for the given topic scope and policy tags.",
+          "readsTopicPack": false,
+          "executesSearch": false
+        },
+        {
+          "step": 4,
+          "id": "emit-dry-run-receipt",
+          "description": "Emit a dry-run receipt with validation outcome, route status, and membrane resolution status. The receipt MUST indicate dryRun: true and MUST NOT include a resultSetRef.",
+          "readsTopicPack": false,
+          "executesSearch": false
+        }
+      ],
+      "invariants": [
+        "No topic pack bytes are read at any step.",
+        "No search query is issued at any step.",
+        "The dry-run receipt does not include search result data."
+      ]
+    },
+    "live": {
+      "description": "Full governed execution: membrane check, topic pack read, scoped search, and deterministic receipt.",
+      "steps": [
+        {
+          "step": 1,
+          "id": "resolve-route",
+          "description": "Same route resolution as dry-run."
+        },
+        {
+          "step": 2,
+          "id": "membrane-check",
+          "description": "Evaluate the policy membrane against topic scope and policy tags. If the decision is DENY or QUARANTINE, halt immediately and emit a denial receipt."
+        },
+        {
+          "step": 3,
+          "id": "load-topic-pack",
+          "description": "Fetch topic pack bytes identified by topicScope.topicPackRef (if provided). Verify pack digest against topicPackDigest. Emit context.pack.selected and context.pack.fetched provenance events."
+        },
+        {
+          "step": 4,
+          "id": "execute-scoped-search",
+          "description": "Issue the search query scoped to the resolved topic slugs. Enforce maxHits and constraints from scopedSearch."
+        },
+        {
+          "step": 5,
+          "id": "emit-receipt",
+          "description": "Emit a deterministic receipt containing all required fields from deterministicReceipt.requiredFields. Hash and optionally sign per canonicalization rules."
+        }
+      ]
+    }
+  },
+  "requiredReceiptFields": [
+    "adapterKind",
+    "adapterVersion",
+    "topicSlugs",
+    "topicPackRef",
+    "topicPackDigest",
+    "membraneRef",
+    "membraneDecision",
+    "queryRef",
+    "resultSetRef",
+    "executedAt",
+    "rng_seed_or_none",
+    "canonicalization"
+  ],
+  "canonicalization": {
+    "format": "json",
+    "ordering": "lexicographic",
+    "encoding": "utf-8",
+    "hash": "blake3"
+  },
+  "governance": {
+    "signedPackRequired": true,
+    "replayable": true,
+    "canonicalProducer": "SocioProphet/slash-topics",
+    "policyRef": "policies/commons-default@0.1.0/policy.json"
+  }
+}
