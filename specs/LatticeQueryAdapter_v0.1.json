@@ -1,0 +1,261 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.org/slash-topics/specs/LatticeQueryAdapter_v0.1.json",
+  "title": "SlashTopics Lattice Query Adapter Contract v0.1",
+  "description": "Normative contract for the slash-topic-query adapter used in Lattice FederatedQueryPlane routing. Governs topic-scoped query routing, policy membrane enforcement, deterministic receipt emission, and scoped search execution.",
+  "type": "object",
+  "required": [
+    "adapterKind",
+    "adapterVersion",
+    "latticeBackend",
+    "topicScope",
+    "policyMembrane",
+    "deterministicReceipt",
+    "provenance",
+    "scopedSearch"
+  ],
+  "properties": {
+    "adapterKind": {
+      "const": "slash-topic-query",
+      "description": "Identifies this object as a Slash Topics query adapter request. Must match the Lattice FederatedQueryPlane backend identifier."
+    },
+    "adapterVersion": {
+      "type": "string",
+      "const": "0.1",
+      "description": "Adapter contract version. Lattice routes must reject adapters whose version they do not recognise."
+    },
+    "latticeBackend": {
+      "type": "object",
+      "description": "Binding to the Lattice FederatedQueryPlane backend descriptor.",
+      "required": ["plane", "backendId", "routeRef"],
+      "properties": {
+        "plane": {
+          "type": "string",
+          "const": "FederatedQueryPlane",
+          "description": "The Lattice plane this adapter targets."
+        },
+        "backendId": {
+          "type": "string",
+          "const": "slash-topic-query",
+          "description": "Lattice canonical backend identifier for Slash Topics."
+        },
+        "routeRef": {
+          "type": "string",
+          "description": "Content-addressed reference (e.g. blake3 hash) or symbolic name of the Lattice route policy bundle that authorised this routing decision."
+        }
+      },
+      "additionalProperties": false
+    },
+    "topicScope": {
+      "type": "object",
+      "description": "Scoping constraints derived from slash topic routing. Exactly one of topicSlugs or topicPackRef must be provided.",
+      "required": ["topicSlugs"],
+      "properties": {
+        "topicSlugs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^/"
+          },
+          "description": "Ordered list of slash topic slugs that scope the query (e.g. [\"/science\", \"/reference\"])."
+        },
+        "topicPackRef": {
+          "type": "string",
+          "description": "Optional reference to a signed topic pack whose topic set defines the scope. When present, topicSlugs must be a subset of or equal to the pack's topic list."
+        },
+        "topicPackDigest": {
+          "type": "string",
+          "description": "Content hash of the referenced topic pack (e.g. blake3:…). Required when topicPackRef is provided."
+        }
+      },
+      "additionalProperties": false
+    },
+    "policyMembrane": {
+      "type": "object",
+      "description": "Policy membrane requirements that must be satisfied before topic packs are read or search is executed.",
+      "required": ["membraneRef", "requiredDecision"],
+      "properties": {
+        "membraneRef": {
+          "type": "string",
+          "description": "Content-addressed reference to the membrane policy bundle governing this query."
+        },
+        "requiredDecision": {
+          "type": "string",
+          "enum": ["ALLOW", "DENY", "QUARANTINE", "REDACT", "REQUIRE_SIGNATURE"],
+          "description": "The membrane decision that must be obtained before proceeding. DENY and QUARANTINE halt the pipeline immediately."
+        },
+        "policyTags": {
+          "type": "object",
+          "description": "Optional policy tags propagated from the upstream query request.",
+          "properties": {
+            "privacy_class": { "type": "string" },
+            "retention": { "type": "string" },
+            "redistribution": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "deterministicReceipt": {
+      "type": "object",
+      "description": "Requirements for the deterministic receipt that must be emitted by every governed execution path.",
+      "required": ["mustEmit", "requiredFields"],
+      "properties": {
+        "mustEmit": {
+          "type": "boolean",
+          "const": true,
+          "description": "Every non-dry-run execution MUST emit a receipt. This field is normatively true."
+        },
+        "requiredFields": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Ordered list of fields that the emitted receipt MUST include.",
+          "examples": [
+            [
+              "adapterKind",
+              "adapterVersion",
+              "topicSlugs",
+              "topicPackRef",
+              "topicPackDigest",
+              "membraneRef",
+              "membraneDecision",
+              "queryRef",
+              "resultSetRef",
+              "executedAt",
+              "rng_seed_or_none",
+              "canonicalization"
+            ]
+          ]
+        },
+        "canonicalization": {
+          "type": "object",
+          "description": "Canonicalization rules applied when hashing the receipt for signing.",
+          "required": ["format", "ordering", "encoding", "hash"],
+          "properties": {
+            "format": { "enum": ["json"] },
+            "ordering": { "enum": ["lexicographic"] },
+            "encoding": { "enum": ["utf-8"] },
+            "hash": { "enum": ["blake3"] }
+          },
+          "additionalProperties": false
+        },
+        "bounded_nondeterminism": {
+          "type": "boolean",
+          "description": "When true, the receipt must include rng_seed so that bounded nondeterminism is bounded and reproducible. Defaults to false (fully deterministic)."
+        }
+      },
+      "additionalProperties": false
+    },
+    "provenance": {
+      "type": "object",
+      "description": "Provenance tracking requirements for replay and audit.",
+      "required": ["replayable", "provenanceRef"],
+      "properties": {
+        "replayable": {
+          "type": "boolean",
+          "description": "When true, the adapter guarantees that a future run with identical inputs, topic pack, and policy yields an equivalent result set (or a declared degradation receipt)."
+        },
+        "provenanceRef": {
+          "type": "string",
+          "description": "URI or content-addressed reference pointing to the provenance record for this query execution."
+        },
+        "localityClass": {
+          "type": "string",
+          "enum": ["hot-local", "warm-local", "shared-near", "remote-cold", "offline-archival"],
+          "description": "Locality class of the topic packs used in this query, used for working-set and movement-cost analysis."
+        },
+        "packLoadEvents": {
+          "type": "array",
+          "description": "Event log entries for topic pack selection and fetch, emitted as part of provenance.",
+          "items": {
+            "type": "object",
+            "required": ["event_type"],
+            "properties": {
+              "event_type": {
+                "type": "string",
+                "enum": [
+                  "context.pack.selected",
+                  "context.pack.fetched",
+                  "context.cache.hit",
+                  "context.cache.miss",
+                  "context.pack.expired",
+                  "context.policy.denied"
+                ]
+              },
+              "payload": { "type": "object" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "scopedSearch": {
+      "type": "object",
+      "description": "Scoped search execution requirements. In dry-run mode this block is validated but no search is executed.",
+      "required": ["queryRef", "resultSetSchema"],
+      "properties": {
+        "queryRef": {
+          "type": "string",
+          "description": "Content-addressed reference to the QueryRequest object that initiated this adapter invocation."
+        },
+        "resultSetSchema": {
+          "type": "string",
+          "description": "Schema identifier that the result set MUST conform to (e.g. search.resultset.schema.v0.1)."
+        },
+        "maxHits": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Optional maximum number of result hits to return."
+        },
+        "constraints": {
+          "type": "object",
+          "description": "Optional search constraints forwarded from the upstream QueryRequest.",
+          "properties": {
+            "time_range": { "type": "string" },
+            "language": { "type": "string" },
+            "region": { "type": "string" }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "dryRun": {
+      "type": "object",
+      "description": "Dry-run configuration. When present, the adapter validates route and policy WITHOUT reading topic packs or executing search.",
+      "required": ["enabled"],
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "description": "When true, the adapter operates in dry-run mode."
+        },
+        "validateRoute": {
+          "type": "boolean",
+          "default": true,
+          "description": "Validate that the latticeBackend routeRef resolves to a known, authorised route."
+        },
+        "validatePolicy": {
+          "type": "boolean",
+          "default": true,
+          "description": "Validate that the policyMembrane membraneRef resolves and that the required decision would be reachable."
+        },
+        "noPackRead": {
+          "type": "boolean",
+          "const": true,
+          "description": "Normatively true in dry-run: topic packs are never read. Conforming implementations MUST NOT fetch pack bytes during dry-run."
+        },
+        "noSearchExecute": {
+          "type": "boolean",
+          "const": true,
+          "description": "Normatively true in dry-run: search is never executed. Conforming implementations MUST NOT issue search queries during dry-run."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
