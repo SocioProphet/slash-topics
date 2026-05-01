@@ -1,0 +1,27 @@
+name: lattice-runtime-profile-topic-pack
+
+on:
+  pull_request:
+    paths:
+      - "packs/lattice-data-governai/runtime-profile-topic-pack.v0.1.json"
+      - "tools/validate_lattice_runtime_profile_topic_pack.py"
+      - ".github/workflows/lattice-runtime-profile-topic-pack.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-lattice-runtime-profile-topic-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Lattice runtime profile topic pack
+        run: python tools/validate_lattice_runtime_profile_topic_pack.py
