@@ -4,7 +4,7 @@
   "metadata": {
     "name": "lattice-data-governai",
     "version": "0.1.0",
-    "description": "Governed topic pack for Lattice Studio/Data/GovernAI data, runtime, model, prompt, evaluation, factsheet, publication, Ray, and Beam assets."
+    "description": "Governed topic pack for Lattice Studio/Data/GovernAI data, runtime, model, prompt, RAG, evaluation, publication, annotation, trust, active metadata, Ray, and Beam assets."
   },
   "spec": {
     "publicSurfaceRef": "slash-topic://lattice/data-governai",
@@ -15,8 +15,15 @@
     "sourceRefs": {
       "umbrellaIssue": "SocioProphet/prophet-platform#291",
       "sherlockPr": "SocioProphet/sherlock-search#30",
+      "expandedSherlockPr": "SocioProphet/sherlock-search#31",
       "topologyPr": "SocioProphet/sociosphere#238",
-      "policyPr": "SocioProphet/policy-fabric#39"
+      "policyPr": "SocioProphet/policy-fabric#39",
+      "modelZooPr": "SocioProphet/prophet-platform#300",
+      "promptRagEvalPr": "SocioProphet/prophet-platform#301",
+      "publicationReviewPr": "SocioProphet/prophet-platform#302",
+      "annotationTrainingPr": "SocioProphet/prophet-platform#303",
+      "activeMetadataPr": "SocioProphet/prophet-platform#304",
+      "trustReputationPr": "SocioProphet/prophet-platform#305"
     },
     "assetClassifications": [
       {
@@ -82,6 +89,102 @@
         "governancePosture": "dry-run-execution-evidence",
         "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef", "dataLineageRefs"],
         "consumerSurfaces": ["sherlock-search", "policy-fabric", "new-hope"]
+      },
+      {
+        "assetKind": "model-zoo-entry",
+        "topic": "/lattice/model-zoo/entry",
+        "scope": "model-discovery",
+        "governancePosture": "review-required-before-promotion",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "agentplane", "new-hope"]
+      },
+      {
+        "assetKind": "model-endpoint",
+        "topic": "/lattice/model-zoo/endpoint",
+        "scope": "serving-candidate",
+        "governancePosture": "dry-run-endpoint-before-serving",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "agentplane"]
+      },
+      {
+        "assetKind": "prompt-asset",
+        "topic": "/lattice/prompt-lab/prompt",
+        "scope": "prompt-discovery",
+        "governancePosture": "policy-gated-prompt-use",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "slash-topics", "policy-fabric", "new-hope"]
+      },
+      {
+        "assetKind": "rag-pipeline",
+        "topic": "/lattice/rag-lab/pipeline",
+        "scope": "rag-governance",
+        "governancePosture": "grounding-evaluation-required",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "agentplane", "new-hope"]
+      },
+      {
+        "assetKind": "vector-index",
+        "topic": "/lattice/rag-lab/vector-index",
+        "scope": "retrieval-index-discovery",
+        "governancePosture": "policy-gated-retrieval",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric"]
+      },
+      {
+        "assetKind": "research-package",
+        "topic": "/lattice/publication/research-package",
+        "scope": "reproducible-publishing",
+        "governancePosture": "review-required-before-publication",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "slash-topics", "policy-fabric", "new-hope"]
+      },
+      {
+        "assetKind": "training-dataset",
+        "topic": "/lattice/training/dataset",
+        "scope": "training-data-governance",
+        "governancePosture": "training-use-policy-required",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "model-zoo", "ray", "policy-fabric"]
+      },
+      {
+        "assetKind": "evaluation-dataset",
+        "topic": "/lattice/evaluation/dataset",
+        "scope": "evaluation-data-governance",
+        "governancePosture": "evaluation-use-policy-required",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "governai", "policy-fabric", "new-hope"]
+      },
+      {
+        "assetKind": "annotation-reliability-score",
+        "topic": "/lattice/annotation/reliability",
+        "scope": "annotation-governance",
+        "governancePosture": "reliability-score-visible",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "governai", "policy-fabric"]
+      },
+      {
+        "assetKind": "active-metadata-event",
+        "topic": "/lattice/active-metadata/event",
+        "scope": "metadata-ingestion",
+        "governancePosture": "event-derived-metadata-only",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "slash-topics", "policy-fabric", "new-hope"]
+      },
+      {
+        "assetKind": "trust-posture-summary",
+        "topic": "/lattice/trust/posture",
+        "scope": "trust-governance",
+        "governancePosture": "promotion-risk-visible",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "slash-topics", "policy-fabric", "new-hope"]
+      },
+      {
+        "assetKind": "trust-signal",
+        "topic": "/lattice/trust/signal",
+        "scope": "trust-governance",
+        "governancePosture": "evidence-backed-score",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "governai", "policy-fabric", "new-hope"]
       }
     ],
     "routingRules": {
