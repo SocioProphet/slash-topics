@@ -1,0 +1,27 @@
+name: lattice-data-governai-topic-pack
+
+on:
+  pull_request:
+    paths:
+      - "packs/lattice-data-governai/**"
+      - "tools/validate_lattice_data_governai_topic_pack.py"
+      - ".github/workflows/lattice-data-governai-topic-pack.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-lattice-data-governai-topic-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Lattice Data/GovernAI topic pack
+        run: python tools/validate_lattice_data_governai_topic_pack.py
