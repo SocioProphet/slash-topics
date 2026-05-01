@@ -1,0 +1,103 @@
+{
+  "apiVersion": "slash-topics.socioprophet.dev/v1",
+  "kind": "TopicPack",
+  "metadata": {
+    "name": "lattice-data-governai",
+    "version": "0.1.0",
+    "description": "Governed topic pack for Lattice Studio/Data/GovernAI data, runtime, model, prompt, evaluation, factsheet, publication, Ray, and Beam assets."
+  },
+  "spec": {
+    "publicSurfaceRef": "slash-topic://lattice/data-governai",
+    "topicPackRef": "slash-topics://packs/lattice-data-governai@0.1.0",
+    "runtimeAliasRef": "slash-topics://runtime/membranes/lattice-data-governai-admission@0.1.0",
+    "compatibilityRef": "newhope://membranes/lattice-data-governai-admission@0.1.0",
+    "memoryProfileRef": "memory-mesh://profiles/slash-topic-scoped-lattice-data-governai@0.1.0",
+    "sourceRefs": {
+      "umbrellaIssue": "SocioProphet/prophet-platform#291",
+      "sherlockPr": "SocioProphet/sherlock-search#30",
+      "topologyPr": "SocioProphet/sociosphere#238",
+      "policyPr": "SocioProphet/policy-fabric#39"
+    },
+    "assetClassifications": [
+      {
+        "assetKind": "data-product",
+        "topic": "/lattice/data-product",
+        "scope": "public-discovery",
+        "governancePosture": "policy-gated-query",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "new-hope"]
+      },
+      {
+        "assetKind": "runtime-asset",
+        "topic": "/lattice/runtime",
+        "scope": "runtime-discovery",
+        "governancePosture": "policy-gated-launch",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef"],
+        "consumerSurfaces": ["sherlock-search", "agentplane", "policy-fabric"]
+      },
+      {
+        "assetKind": "query-run",
+        "topic": "/lattice/query-run",
+        "scope": "query-evidence",
+        "governancePosture": "federated-query-record",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "new-hope", "policy-fabric"]
+      },
+      {
+        "assetKind": "evaluation-bundle",
+        "topic": "/lattice/governai/evaluation",
+        "scope": "governai-review",
+        "governancePosture": "review-required-when-verdict-needs-review",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "new-hope"]
+      },
+      {
+        "assetKind": "factsheet",
+        "topic": "/lattice/governai/factsheet",
+        "scope": "governai-review",
+        "governancePosture": "approval-state-visible",
+        "requiredRefs": ["evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "new-hope", "policy-fabric"]
+      },
+      {
+        "assetKind": "publication-artifact",
+        "topic": "/lattice/publication",
+        "scope": "reproducible-publishing",
+        "governancePosture": "review-required-before-export",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "new-hope"]
+      },
+      {
+        "assetKind": "ray-job-dry-run",
+        "topic": "/lattice/mlops/ray",
+        "scope": "mlops-execution-evidence",
+        "governancePosture": "dry-run-execution-evidence",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "agentplane", "policy-fabric"]
+      },
+      {
+        "assetKind": "beam-pipeline-dry-run",
+        "topic": "/lattice/mlops/beam",
+        "scope": "dataops-execution-evidence",
+        "governancePosture": "dry-run-execution-evidence",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef", "dataLineageRefs"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "new-hope"]
+      }
+    ],
+    "routingRules": {
+      "requiredSequence": [
+        "slash-topic-scope",
+        "slash-topics-runtime-alias",
+        "newhope-compatibility-membrane",
+        "memory-mesh-profile",
+        "policy-fabric-decision",
+        "consumer-surface-route"
+      ],
+      "publicSurface": "slash-topics",
+      "runtimeSubstrate": "new-hope",
+      "dryRunOnly": true,
+      "mustNotBypassPolicyFabric": true,
+      "mustNotRedefinePlatformAssetRecord": true
+    }
+  }
+}
