@@ -20,6 +20,18 @@ REQUIRED_ASSET_KINDS = {
     "publication-artifact",
     "ray-job-dry-run",
     "beam-pipeline-dry-run",
+    "model-zoo-entry",
+    "model-endpoint",
+    "prompt-asset",
+    "rag-pipeline",
+    "vector-index",
+    "research-package",
+    "training-dataset",
+    "evaluation-dataset",
+    "annotation-reliability-score",
+    "active-metadata-event",
+    "trust-posture-summary",
+    "trust-signal",
 }
 REQUIRED_SEQUENCE = [
     "slash-topic-scope",
@@ -29,6 +41,19 @@ REQUIRED_SEQUENCE = [
     "policy-fabric-decision",
     "consumer-surface-route",
 ]
+REQUIRED_SOURCE_REFS = {
+    "umbrellaIssue",
+    "sherlockPr",
+    "expandedSherlockPr",
+    "topologyPr",
+    "policyPr",
+    "modelZooPr",
+    "promptRagEvalPr",
+    "publicationReviewPr",
+    "annotationTrainingPr",
+    "activeMetadataPr",
+    "trustReputationPr",
+}
 
 
 def fail(message: str) -> int:
@@ -76,8 +101,8 @@ def main() -> int:
 
         source_refs = spec.get("sourceRefs")
         require(isinstance(source_refs, dict), "sourceRefs must be object")
-        for key in ["umbrellaIssue", "sherlockPr", "topologyPr", "policyPr"]:
-            require_str(source_refs, key)
+        missing_source_refs = sorted(REQUIRED_SOURCE_REFS - set(source_refs))
+        require(not missing_source_refs, f"missing sourceRefs: {missing_source_refs}")
 
         classifications = require_list(spec, "assetClassifications")
         asset_kinds = set()
@@ -92,7 +117,10 @@ def main() -> int:
             required_refs = require_list(item, "requiredRefs")
             require("evidenceCorrelationId" in required_refs, f"{asset_kind} must require evidenceCorrelationId")
             surfaces = require_list(item, "consumerSurfaces")
-            require("sherlock-search" in surfaces or asset_kind == "runtime-asset", f"{asset_kind} should route to Sherlock or be runtime-discoverable")
+            require(
+                "sherlock-search" in surfaces or asset_kind == "runtime-asset",
+                f"{asset_kind} should route to Sherlock or be runtime-discoverable",
+            )
         missing = sorted(REQUIRED_ASSET_KINDS - asset_kinds)
         require(not missing, f"missing assetKind classifications: {missing}")
 
