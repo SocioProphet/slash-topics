@@ -1,0 +1,69 @@
+{
+  "apiVersion": "slash-topics.socioprophet.dev/v1",
+  "kind": "RuntimeProfileTopicPack",
+  "metadata": {
+    "name": "lattice-runtime-profiles",
+    "version": "0.1.0",
+    "description": "Slash Topics classifications for Lattice notebook, Ray, and Beam runtime profiles and RuntimeProfileBinding records."
+  },
+  "spec": {
+    "publicSurfaceRef": "slash-topic://lattice/data-governai/runtime-profiles",
+    "parentTopicPackRef": "slash-topics://packs/lattice-data-governai@0.1.0",
+    "runtimeAliasRef": "slash-topics://runtime/membranes/lattice-data-governai-admission@0.1.0",
+    "compatibilityRef": "newhope://membranes/lattice-data-governai-admission@0.1.0",
+    "memoryProfileRef": "memory-mesh://profiles/slash-topic-scoped-lattice-data-governai@0.1.0",
+    "sourceRefs": {
+      "runtimeForgePr": "SocioProphet/lattice-forge#11",
+      "platformRuntimeCatalogPr": "SocioProphet/prophet-platform#306",
+      "agentplaneRuntimeRefsPr": "SocioProphet/agentplane#77",
+      "sherlockRuntimeIndexPr": "SocioProphet/sherlock-search#32",
+      "topologyRuntimePr": "SocioProphet/sociosphere#240"
+    },
+    "runtimeAssets": [
+      {
+        "assetId": "runtime-asset:prophet-python-ml:0.1.0",
+        "runtimeClass": "notebook",
+        "topic": "/lattice/runtime/notebook",
+        "roles": ["NotebookSession", "QueryRun", "PublicationArtifact"],
+        "governancePosture": "policy-gated-notebook-runtime",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "agentplane", "cloudshell-fog"]
+      },
+      {
+        "assetId": "runtime-asset:prophet-ray-ml:0.1.0",
+        "runtimeClass": "ray",
+        "topic": "/lattice/runtime/ray",
+        "roles": ["ModelZooEntry", "ModelRuntimeProfile", "ModelEndpoint", "RayJobDryRunPlan", "RAGPipeline", "EvaluationBundle"],
+        "governancePosture": "policy-gated-ray-runtime",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "agentplane", "cloudshell-fog", "new-hope"]
+      },
+      {
+        "assetId": "runtime-asset:prophet-beam-dataops:0.1.0",
+        "runtimeClass": "beam",
+        "topic": "/lattice/runtime/beam",
+        "roles": ["BeamPipelineDryRunPlan", "TrainingDatasetRecipe", "QualityProfile", "VectorIndex"],
+        "governancePosture": "policy-gated-beam-runtime",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRef"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "agentplane", "cloudshell-fog", "new-hope"]
+      }
+    ],
+    "assetClassifications": [
+      {
+        "assetKind": "runtime-profile-binding",
+        "topic": "/lattice/runtime/profile-binding",
+        "scope": "runtime-role-governance",
+        "governancePosture": "runtime-role-binding-required-before-agent-execution",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRefs"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "agentplane", "new-hope", "cloudshell-fog"]
+      }
+    ],
+    "routingRules": {
+      "publicSurface": "slash-topics",
+      "runtimeSubstrate": "new-hope",
+      "mustNotBypassPolicyFabric": true,
+      "mustNotRedefinePlatformAssetRecord": true,
+      "mustPreserveRuntimeAssetRefs": true
+    }
+  }
+}
