@@ -12,6 +12,10 @@ This repository defines governed scopes (slash topics) and their executable form
 6. `docs/BlekkoMechanics.md`
 7. `docs/ResolutionRules.md`
 
+## Architecture decisions
+
+- ADR-0001: `docs/adr/ADR-0001-slash-topics-new-hope-runtime-consolidation.md`
+
 ## Spec surface
 
 - Capsule manifest schema: `spec/capsule/capsule.manifest.schema.v0.1.json`
