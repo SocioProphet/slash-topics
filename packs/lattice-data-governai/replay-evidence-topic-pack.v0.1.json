@@ -1,0 +1,66 @@
+{
+  "apiVersion": "slash-topics.socioprophet.dev/v1",
+  "kind": "ReplayEvidenceTopicPack",
+  "metadata": {
+    "name": "lattice-replay-evidence",
+    "version": "0.1.0",
+    "description": "Slash Topics classifications for Lattice replay evidence bundles, lineage receipts, metrics artifacts, and replay command refs."
+  },
+  "spec": {
+    "publicSurfaceRef": "slash-topic://lattice/data-governai/replay-evidence",
+    "parentTopicPackRef": "slash-topics://packs/lattice-data-governai@0.1.0",
+    "runtimeProfileTopicPackRef": "slash-topics://packs/lattice-data-governai/runtime-profiles@0.1.0",
+    "runtimeAliasRef": "slash-topics://runtime/membranes/lattice-data-governai-admission@0.1.0",
+    "compatibilityRef": "newhope://membranes/lattice-data-governai-admission@0.1.0",
+    "memoryProfileRef": "memory-mesh://profiles/slash-topic-scoped-lattice-data-governai@0.1.0",
+    "sourceRefs": {
+      "mlopsReplayEvidencePr": "SocioProphet/prophet-platform-fabric-mlops-ts-suite#35",
+      "sherlockReplayEvidencePr": "SocioProphet/sherlock-search#33",
+      "demoReadinessTopologyPr": "SocioProphet/sociosphere#246",
+      "demoCommandBundlePr": "SocioProphet/cloudshell-fog#32"
+    },
+    "assetClassifications": [
+      {
+        "assetKind": "replay-evidence-bundle",
+        "topic": "/lattice/mlops/replay-evidence-bundle",
+        "scope": "mlops-replay-governance",
+        "governancePosture": "replay-evidence-required-for-demo-path",
+        "requiredRefs": ["policyRef", "evidenceCorrelationId", "runtimeRefs", "artifactRefs", "lineageReceiptRefs", "replayCommandRefs"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "agentplane", "cloudshell-fog", "new-hope"]
+      },
+      {
+        "assetKind": "lineage-receipt",
+        "topic": "/lattice/mlops/lineage-receipt",
+        "scope": "replayable-lineage",
+        "governancePosture": "lineage-receipt-required-for-replay",
+        "requiredRefs": ["lineageRunRef", "jobRef", "runtimeRef", "inputDigestRefs", "outputDigestRefs", "evidenceRef"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "agentplane", "new-hope"]
+      },
+      {
+        "assetKind": "metric-expectation",
+        "topic": "/lattice/mlops/metric-expectation",
+        "scope": "replayable-metrics",
+        "governancePosture": "expected-metrics-required-for-demo-readiness",
+        "requiredRefs": ["metricName", "runtimeRef", "artifactRef", "evidenceRef"],
+        "consumerSurfaces": ["sherlock-search", "policy-fabric", "lattice-studio"]
+      }
+    ],
+    "replayEvidenceBundle": {
+      "assetRef": "urn:srcos:evidence-bundle:lattice-governed-execution-0001",
+      "runtimeRefs": ["runtime-asset:prophet-ray-ml:0.1.0", "runtime-asset:prophet-beam-dataops:0.1.0"],
+      "artifactRefs": ["urn:srcos:artifact:community_truth_demo_ray_metrics", "urn:srcos:artifact:community_truth_demo_beam_quality", "urn:srcos:model:community_truth_demo_candidate"],
+      "lineageReceiptRefs": ["urn:srcos:lineage-receipt:ray-community-truth-demo-0001", "urn:srcos:lineage-receipt:beam-community-truth-demo-0001"],
+      "metricNames": ["factuality_f1", "grounding_precision", "training_records", "quality_completeness", "annotation_coverage", "duplicate_rate"],
+      "replayCommandRefs": ["/lattice mlops ray run community_truth_demo --runtime prophet-ray-ml --dry-run", "/lattice dataops beam run community_truth_demo --runtime prophet-beam-dataops --dry-run"],
+      "safety": {"network": "none", "secrets": "none", "hostMutation": false}
+    },
+    "routingRules": {
+      "publicSurface": "slash-topics",
+      "runtimeSubstrate": "new-hope",
+      "mustNotBypassPolicyFabric": true,
+      "mustNotRedefinePlatformAssetRecord": true,
+      "mustPreserveReplayEvidenceRefs": true,
+      "mustPreserveRuntimeAssetRefs": true
+    }
+  }
+}
