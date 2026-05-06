@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://socioprophet.io/schemas/slash-topics/personal-intelligence-cell-surface.schema.json",
+  "title": "PersonalIntelligenceCellSlashTopicSurface",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "surfaceKind",
+    "schemaVersion",
+    "topicRef",
+    "cellRef",
+    "watchRef",
+    "signalRef",
+    "feedItemRef",
+    "title",
+    "summary",
+    "extractions",
+    "policyDecisionRefs",
+    "policyDecision",
+    "evidenceRefs",
+    "replay"
+  ],
+  "properties": {
+    "surfaceKind": { "const": "slash-topic-cell-signal" },
+    "schemaVersion": { "const": "v0.1" },
+    "topicRef": {
+      "type": "string",
+      "pattern": "^/cell/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+    },
+    "cellRef": { "type": "string", "minLength": 1 },
+    "watchRef": { "type": "string", "minLength": 1 },
+    "signalRef": { "type": "string", "minLength": 1 },
+    "feedItemRef": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string", "minLength": 1 },
+    "extractions": { "type": "object", "additionalProperties": true },
+    "policyDecisionRefs": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "policyDecision": {
+      "type": "string",
+      "enum": ["allow", "deny", "quarantine", "review_required", "redact"]
+    },
+    "evidenceRefs": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "replay": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceRef", "observedAt", "createdAt"],
+      "properties": {
+        "sourceRef": { "type": "string", "minLength": 1 },
+        "observedAt": { "type": "string", "minLength": 1 },
+        "createdAt": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}
