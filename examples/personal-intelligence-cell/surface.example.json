@@ -1,0 +1,28 @@
+{
+  "surfaceKind": "slash-topic-cell-signal",
+  "schemaVersion": "v0.1",
+  "topicRef": "/cell/personal/runtime-design-changes-in-socioprophet-repos",
+  "cellRef": "cell://demo/personal-intelligence-cell",
+  "watchRef": "watch://demo/repo-runtime-design-change",
+  "signalRef": "signal://demo/repo-runtime-design-change/001",
+  "feedItemRef": "feed-item://demo/private/repo-runtime-design-change/001",
+  "title": "Runtime design changed in prophet-platform",
+  "summary": "Personal Intelligence Cell runtime design was added and should be considered for the next implementation pass.",
+  "extractions": {
+    "repo": "SocioProphet/prophet-platform",
+    "path": "docs/PERSONAL_INTELLIGENCE_CELL_RUNTIME.md",
+    "change_type": "new runtime design"
+  },
+  "policyDecisionRefs": [
+    "feed://demo/private"
+  ],
+  "policyDecision": "allow",
+  "evidenceRefs": [
+    "evidence://github/SocioProphet/prophet-platform/commit/25feb104bf6a164f1bd754614e2c6cba329b11b2"
+  ],
+  "replay": {
+    "sourceRef": "source://github/SocioProphet/prophet-platform",
+    "observedAt": "2026-05-04T00:01:00Z",
+    "createdAt": "2026-05-04T00:01:06Z"
+  }
+}
