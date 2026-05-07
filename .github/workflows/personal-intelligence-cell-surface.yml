@@ -1,0 +1,30 @@
+name: personal-intelligence-cell-surface
+
+on:
+  pull_request:
+    paths:
+      - "specs/personal-intelligence-cell-surface.schema.json"
+      - "examples/personal-intelligence-cell/surface.example.json"
+      - "scripts/validate_personal_intelligence_cell_surface.py"
+      - "README.md"
+      - "docs/**"
+      - ".github/workflows/personal-intelligence-cell-surface.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-personal-intelligence-cell-surface:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Personal Intelligence Cell slash-topic surface
+        run: python3 scripts/validate_personal_intelligence_cell_surface.py
