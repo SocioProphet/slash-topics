@@ -11,9 +11,16 @@ This repo turns the blekko-era idea (explicit scoping via `/topic`) into 2025-gr
 Start in:
 - HISTORY.md (origins + motivation)
 - docs/SlashTopics.md (the spec overview)
+- docs/governed-topic-pack-membrane-v0.md (recovery contract for slash-topics as governed topic-pack membrane)
 - specs/*.json (normative schemas)
 - protocols/ (versioned packs)
 - policies/ (default governance bundles)
+
+## Governed topic-pack membrane
+
+The governed topic-pack membrane contract defines slash topics as more than labels or UI routes: they are governed scopes controlling sources, evidence, policies, operators, integrations, privacy posture, receipts, and display behavior.
+
+The recovery contract is intentionally architecture-level. It does not change schemas, validators, protocol behavior, or runtime adoption by consuming repos.
 
 ## Personal Intelligence Cell surface
 
